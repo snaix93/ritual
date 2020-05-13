@@ -141,6 +141,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -206,6 +207,7 @@
       <workItem from="1588588000494" duration="2436000" />
       <workItem from="1588665524524" duration="6754000" />
       <workItem from="1588758373934" duration="14000" />
+      <workItem from="1589357538939" duration="314000" />
     </task>
     <servers />
   </component>
