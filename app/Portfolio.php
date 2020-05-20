@@ -14,7 +14,7 @@ class Portfolio extends Model
 
 {
 
-    protected $fillable = ['name', 'slug', 'description', 'photo_id', 'ppi', 'price2', 'price3','min', 'net', 'discount', 'price', 'views', 'ranking', 'rotating_image', 'category_id'];
+    protected $fillable = ['name', 'slug', 'description', 'photo_id', 'ppi', 'price2', 'size','min', 'net', 'discount', 'price', 'views', 'ranking', 'rotating_image', 'category_id', 'name_ru', 'description_ru', 'size_ru'];
     public function getRouteKeyName()
 
     {

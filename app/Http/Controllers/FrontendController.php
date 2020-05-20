@@ -26,7 +26,7 @@ class FrontendController extends Controller{
             Session::put('locale',$request->language);
             App::setLocale($request->language);
         }
-        $newProducts = Portfolio::whereAvailable(1)->orderBy('created_at', 'desc')->take(27)->get();
+        $newProducts = Portfolio::whereAvailable(1)->whereNotNull('rotating_image')->orderBy('created_at', 'desc')->take(27)->get();
         return view('front.landing', compact('newProducts'));
     }
 
@@ -77,6 +77,7 @@ class FrontendController extends Controller{
         if(!empty($request->language)){
             Session::put('locale',$request->language);
             App::setLocale($request->language);
+            return redirect($request->link);
         }
 
         $categories = $this->navCategories();

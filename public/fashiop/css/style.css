@@ -509,7 +509,7 @@ a {
     position: relative;
     overflow: hidden;
     width: 100%;
-    background: url(../img/breadcrumb/checkout-bg.jpg) no-repeat center bottom;
+    /*background: url(../img/breadcrumb/checkout-bg.jpg) no-repeat center bottom;*/
     background-size: contain;
     z-index: 1; }
     .banner_area .banner_inner .overlay {
@@ -523,15 +523,15 @@ a {
       position: relative;
       z-index: 10; }
       .banner_area .banner_inner .banner_content h2 {
-        color: #ffffff;
+        color: #000000;
         font-size: 48px;
         font-family: "Roboto", sans-serif;
         margin-bottom: 12px;
         font-weight: 500;
         margin-top: 120px; }
       .banner_area .banner_inner .banner_content .page_link a {
-        font-size: 14px;
-        color: #ffffff;
+        font-size: 21px;
+        color:#000000;
         font-family: "Roboto", sans-serif;
         margin-right: 32px;
         position: relative; }
@@ -3216,8 +3216,6 @@ h6 {
 ============================================================================================ */
 /* Single Product Area css
 ============================================================================================ */
-.product_image_area {
-  padding-top: 120px; }
 
 .s_product_img .carousel {
   position: relative; }

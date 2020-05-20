@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand logo_h" href="/">
-                    <img src="/images/icons/ritual.png" alt="">
+                    <img src="/images/icons/fantana.png" alt="">
                 </a>
                 <h3 style="font-family: 'Just Another Hand', cursive, italic">{{ ucwords(request()->getHost()) }}</h3>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -42,12 +42,18 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="/information/pages/contact">@lang('translations.contact')</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/information/pages/tehnologii-de-producere">@lang('translations.tehnologii')</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/information/pages/parametri-tehnici">@lang('translations.parametri')</a>
+                                </li>
                                 <li class="nav-item submenu dropdown">
                                     <a href="#" class="nav-link dropdown-toggle"><img class="text-primary icon-settings_backup_restore" src="/images/icons/{{ Lang::locale() == 'ru' ? 'ru' : 'ro' }}.png"></a>
                                     <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="{{ url('/all-products?language=en') }}" >
+                                        <li class="nav-item"><a class="nav-link" href="{{ url('/all-products?language=en&link=' . url()->current()) }}">
                                             <img class="icon-settings_backup_restore" src="/images/icons/ro.png"></a></li>
-                                        <li class="nav-item"><a class="nav-link" href="{{ url('/all-products?language=ru') }}">
+                                        <li class="nav-item"><a class="nav-link" href="{{ url('/all-products?language=ru&link=' . url()->current()) }}">
                                                 <img class="icon-settings_backup_restore" src="/images/icons/ru.png"></a></li>
                                     </ul>
                                 </li>

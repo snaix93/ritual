@@ -3,7 +3,7 @@
 @section('content')
 
 @include('layouts.header')
-
+<script src="https://scripts.sirv.com/sirv.js"></script>
 <!--================Home Banner Area =================-->
 {{--<section class="home_banner_area">--}}
 {{--    <div class="overlay"></div>--}}
@@ -93,14 +93,19 @@
                 @foreach($newProducts as $key => $portfolio)
                     <div class="col-lg-3 col-md-3 col-sm-6" itemprop=itemListElement itemscope itemtype=http://schema.org/ListItem>
                         <span itemprop=position hidden>{{($key + 1)}}</span>
-                        <a  href="{{$url = url((empty($portfolio->category->name) ? '' : $portfolio->category->name)  . '/' . ($slug = $portfolio->slug). '/')}}"  itemprop=url>
+                        <a href="{{$url = url((empty($portfolio->category->name) ? '' : $portfolio->category->slug)  . '/' . ($slug = $portfolio->slug). '/')}}" itemprop=url>
                             <div class="f_p_item">
                                 <div class="f_p_img">
-                                    @if(!empty($photo = $portfolio->photo))
-                                        <img class="img-fluid" itemprop=image style="width: 300px; height: 350px;" src="{{asset($photo = $portfolio->photo->file)}}" title="{{$slug}}" alt="{{$slug}}">
-                                    @endif
+{{--                                    @if(!empty($r_image))--}}
+                                        <div class="carousel-item active">
+                                            <div class="Sirv" data-src="{{ $portfolio->rotating_image }}"></div>
+                                        </div>
+{{--                                    @endif--}}
+{{--                                    @if(!empty($photo = $portfolio->photo))--}}
+{{--                                        <img class="img-fluid" itemprop=image style="width: 300px; height: 350px;" src="{{asset($photo = $portfolio->photo->file)}}" title="{{$slug}}" alt="{{$slug}}">--}}
+{{--                                    @endif--}}
                                 </div>
-                                <a  href="{{$url = url((empty($portfolio->category->name) ? '' : $portfolio->category->name)  . '/' . ($slug = $portfolio->slug). '/')}}" >
+                                <a  href="{{$url = url((empty($portfolio->category->name) ? '' : $portfolio->category->slug)  . '/' . ($slug = $portfolio->slug). '/')}}" >
                                     <h4>{{$portfolio->name}}</h4>
                                 </a>
                                 <h5>{{ $portfolio->sizes->count() > 1 ? $portfolio->sizes->first()->price : $portfolio->price  }}</h5>

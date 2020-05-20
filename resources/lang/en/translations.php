@@ -42,5 +42,9 @@ return [
     'your_order' => 'Comanda Dumneavoastra',
     'mramura' => 'Monumente de Mramura',
     'beton' => 'Monumente de Beton',
-    'cauta' => 'Cauta'
+    'cauta' => 'Cauta',
+    'tehnologii' => 'Tehnologii de Producere',
+    'tehnologii1' => 'La confecționarea fântânelor noi folosim ciment de calitate superioară LAFARGE EXTRA 550, care la rândul său garantează o calitate excepțională a întregii game de producție.',
+    'tehnologii2' => 'Burlanul de beton a fântânei este întărit cu fier armat de 8 mm, și în acest caz se evită tot felul de fisuri si distrugera burlanului în timpul utilizării.',
+    'parametri' => 'Parametri Tehnici',
 ];

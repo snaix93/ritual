@@ -9,22 +9,33 @@ Route::post('/upload', 'UploadController@uploadSubmit')->name('admin.upload.imag
 Route::get('/', 'FrontendController@landing')->name('/')->middleware(['language']);
 
 Route::middleware(['language'])->group(function () {
-Route::get('/discounts', ['as' => 'discounts', 'uses' => 'FrontendController@discounts']);
-Route::get('/price', ['as' => 'price', 'uses' => 'FrontendController@byPrice'])->name('price');
-Route::get('/whatsapp-message', ['as' => 'price', 'uses' => 'FrontendController@whatsapp'])->name('whatsapp');
-Route::get('/sms', ['as' => 'price', 'uses' => 'FrontendController@sms'])->name('sms');
-Route::get('/phone-call', ['as' => 'price', 'uses' => 'FrontendController@phoneCall'])->name('phone_call');
-Route::get('/all-products', ['uses' => 'FrontendController@allProducts'])->name('all_products');
-Route::get('{category}/{portfolio}', 'FrontendController@displayItem')->middleware(['language']);;
-Route::get('{category}', 'FrontendController@index')->name('front.index');
-Route::get('apply-coupon', 'FrontendController@applyCoupon');
-Route::post('send-to-email', 'FrontendController@sendToEmail')->name('send-email');
+    Route::get('/discounts', ['as' => 'discounts', 'uses' => 'FrontendController@discounts']);
+    Route::get('/price', ['as' => 'price', 'uses' => 'FrontendController@byPrice'])->name('price');
+    Route::get('/whatsapp-message', ['as' => 'price', 'uses' => 'FrontendController@whatsapp'])->name('whatsapp');
+    Route::get('/sms', ['as' => 'price', 'uses' => 'FrontendController@sms'])->name('sms');
+    Route::get('/phone-call', ['as' => 'price', 'uses' => 'FrontendController@phoneCall'])->name('phone_call');
+    Route::get('/all-products', ['uses' => 'FrontendController@allProducts'])->name('all_products');
+    Route::get('{category}/{portfolio}', 'FrontendController@displayItem')->middleware(['language']);;
+    Route::get('{category}', 'FrontendController@index')->name('front.index');
+    Route::get('apply-coupon', 'FrontendController@applyCoupon');
+    Route::post('send-to-email', 'FrontendController@sendToEmail')->name('send-email');
+
+    Route::get('category/tag/{tag}', 'FrontendController@categories')->name('tag_category');
+    Route::get('information/pages/contact', function() {
+        return view('front.categories.contact');
+    });
+
+    Route::get('information/pages/tehnologii-de-producere', function() {
+        return view('front.categories.tehnologii');
+    });
+
+    Route::get('information/pages/parametri-tehnici', function() {
+        return view('front.categories.parametri');
+    });
 });
 
-Route::get('category/tag/{tag}', 'FrontendController@categories')->name('tag_category');
-Route::get('information/pages/contact', function() {
-    return view('front.categories.contact');
-});
+
+
 
 Route::get('/confirmation', function(Request $request) {
     $order = \App\Order::orderBy('id','desc')->first();
