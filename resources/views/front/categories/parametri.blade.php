@@ -32,43 +32,49 @@
         letter-spacing: 3px;
         font-size: 20px;
     }
+        .ftco-animate{
+            height: 1000px;
+        }
+
+        .image-popup{
+            width: 300px; height: 400px
+        }
+        .img-responsive{
+            margin-left: 150px;
+            box-shadow: 5px 5px 7px #7f7c7c;
+        }
 
 </style>
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
-        <div class="container-fluid px-md-0">
-            <div class="row no-gutters" style="margin-top: 80px;">
-                <div class="col-md-4 ftco-animate">
-                    <div class="gallery img d-flex align-items-end" style="background-image: url(/images/tehnologii/fantana_neagra.jpg); height: 700px">
-                        <a href="/images/tehnologii/fantana_neagra.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="gallery img d-flex align-items-end" style="background-image: url(/images/tehnologii/fantana_rosie.jpg); height: 700px">
-                        <a href="/images/tehnologii/fantana_rosie.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="gallery img d-flex align-items-end" style="background-image: url(/images/tehnologii/fantana_cu_capac.jpg); height: 700px">
-                        <a href="/images/tehnologii/fantana_cu_capac.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="gallery img d-flex align-items-end" style="background-image: url(/images/tehnologii/fantana_verde.jpg); height: 700px">
-                        <a href="/images/tehnologii/fantana_verde.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                    </div>
-                </div>
+    <body>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-2 col-md-offset-0">
+                <a href="/images/tehnologii/fantana_verde.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                    <img class="img-responsive" src="/images/tehnologii/small/fantana_verde.jpg" />
+                </a>
             </div>
-        </div>
-    </section>
+            <div class="col-md-2 col-md-offset-3">
+                <a href="/images/tehnologii/fantana_taur.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                    <img class="img-responsive" src="/images/tehnologii/small/fantana_taur.jpg" />
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="/images/tehnologii/fantana_rosie.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                    <img class="img-responsive" src="/images/tehnologii/small/fantana_rosie.jpg" />
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="/images/tehnologii/fantana_cu_capac.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                    <img class="img-responsive" src="/images/tehnologii/small/fantana_cu_capac.jpg" />
+                </a>
+            </div>
+            <div class="col-md-2 col-md-offset-1" >
+                <a href="/images/tehnologii/fantana_neagra.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                    <img class="img-responsive" src="/images/tehnologii/small/fantana_neagra.jpg" />
+                </a>
+            </div>
 
+        </div>
+    </body>
     <script src="/lawncare/js/jquery.min.js"></script>
     <script src="/lawncare/js/jquery-migrate-3.0.1.min.js"></script>
     <script src="/lawncare/js/popper.min.js"></script>

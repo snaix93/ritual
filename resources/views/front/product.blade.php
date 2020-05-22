@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+    <link rel="stylesheet" href="/lawncare/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/lawncare/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/lawncare/css/magnific-popup.css">
     <script src="https://scripts.sirv.com/sirv.js"></script>
     @include('layouts.header')
     <?php   $title  = $portfolio->name;
@@ -187,6 +190,7 @@
                             @if(!empty($r_image = $portfolio->rotating_image))
                                 <?php $add_val = 1 ?>
                                 <li data-target="#carouselExampleIndicators"  data-slide-to="0">
+
                                     <img src="/images/icons/rotating.png" alt="{{ $portfolio->tags()->pluck('name') }}" width="100%" height="60" style="background-color: white;">
                                 </li>
                             @endif
@@ -209,9 +213,11 @@
                             @foreach($portfolio->photos as $key => $photo)
                                 @if(!empty($photo->file))
                                     <div class="carousel-item {{ $key + $add_val == 0 ? 'active' : '' }}">
-                                        {{--                                            <a href="{{ $photo->file }}">--}}
-                                        <img class="d-block w-100 zoomD1" src="{{ $photo->file }}" alt="{{ $portfolio->tags()->pluck('name') }}">
-                                        {{--                                            </a>--}}
+                                        <div class="col-md-2 col-md-offset-0">
+                                            <a href="{{ $photo->file }}" class="icon image-popup">
+                                                <img class="img-responsive" src="{{ $photo->file }}" style="width: 500px; height: 100%;"/>
+                                            </a>
+                                        </div>
                                     </div>
                                 @endif
                             @endforeach
@@ -309,5 +315,17 @@
             </div>
         </div>
     </section>
+    <script src="/lawncare/js/jquery.min.js"></script>
+    <script src="/lawncare/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/lawncare/js/popper.min.js"></script>
+    <script src="/lawncare/js/bootstrap.min.js"></script>
+    <script src="/lawncare/js/jquery.easing.1.3.js"></script>
+    <script src="/lawncare/js/jquery.waypoints.min.js"></script>
+    <script src="/lawncare/js/jquery.stellar.min.js"></script>
+    <script src="/lawncare/js/owl.carousel.min.js"></script>
+    <script src="/lawncare/js/jquery.magnific-popup.min.js"></script>
+    <script src="/lawncare/js/scrollax.min.js"></script>
+    <script src="/lawncare/js/google-map.js"></script>
+    <script src="/lawncare/js/main.js"></script>
     @include('layouts.footer')
 @endsection

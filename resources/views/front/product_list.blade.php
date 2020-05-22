@@ -136,7 +136,7 @@ $description = empty($description) ? 'Мы обладаем огромным о�
                 </p>
                 <div class="latest_product_inner row">
                     @foreach($portfolios as $key => $portfolio)
-                        <div class="col-lg-2 col-md-2 col-sm-6" itemprop=itemListElement itemscope itemtype=http://schema.org/ListItem>
+                        <div class="col-lg-2 col-md-2 col-sm-6 {{ $key % 5 == 0 ? 'col-md-offset-1' : '' }}" itemprop=itemListElement itemscope itemtype=http://schema.org/ListItem>
                             <span itemprop=position hidden>{{($key + 1)}}</span>
                             <a  href="{{$url = url((empty($portfolio->category->name) ? '' : $portfolio->category->slug)  . '/' . ($slug = $portfolio->slug). '/')}}" itemprop=url>
                                 <div class="f_p_item">

@@ -25,13 +25,13 @@ Route::middleware(['language'])->group(function () {
         return view('front.categories.contact');
     });
 
-    Route::get('information/pages/tehnologii-de-producere', function() {
+    Route::get('information/pages/tehnologii-de-producere', ['as' => 'tehnologii', function() {
         return view('front.categories.tehnologii');
-    });
+    }]);
 
-    Route::get('information/pages/parametri-tehnici', function() {
+    Route::get('information/pages/parametri-tehnici', ['as' => 'parametri',  function() {
         return view('front.categories.parametri');
-    });
+    }]);
 });
 
 

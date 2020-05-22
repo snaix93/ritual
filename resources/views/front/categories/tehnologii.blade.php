@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
     @include('layouts.header')
 <style>
     .par {
@@ -10,35 +9,33 @@
         letter-spacing: 3px;
         font-size: 20px;
     }
-
 </style>
     <!--================Contact Area =================-->
     <section class="contact_area p_120">
 {{--            <div class="container">--}}
-            <div class="row">
-                <div class="col-lg-3">
-                    <img src="/images/tehnologii/fantana.png" width="300px" height="200px">
-                </div>
-                <div class="col-lg-6">
-                </div>
-                <div class="col-lg-3">
-                    <img src="/images/tehnologii/cemfort.png"  width="300px" height="200px">
-                </div>
-                <div class="col-lg-3">
-                    <img src="/images/tehnologii/cetatea.png" width="300px" height="300px">
-                </div>
-                <div class="col-lg-6" >
+            <div class="d-flex justify-content-center">
+                <div class="col-lg-4 d-flex justify-content-center col-md-offset-6" >
                     <div>
                         <p class="par">@lang('translations.tehnologii1')</p>
 
                         <p class="par">@lang('translations.tehnologii2')</p>
                     </div>
                 </div>
-                <div class="col-lg-3" >
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-3 d-flex justify-content-center">
+                    <img src="/images/tehnologii/fantana.png" width="300px" height="200px">
+                </div>
+                <div class="col-lg-3 d-flex justify-content-center">
+                    <img src="/images/tehnologii/cemfort.png"  width="300px" height="200px">
+                </div>
+                <div class="col-lg-3 d-flex justify-content-center">
+                    <img src="/images/tehnologii/cetatea.png" width="300px" height="300px" style="margin-top: -30px;">
+                </div>
+                <div class="col-lg-3 d-flex justify-content-center" >
                     <img src="/images/tehnologii/armatura.png">
                 </div>
             </div>
-{{--           </div>--}}
     </section>
     <!--================Contact Area =================-->
     @include('layouts.footer')
