@@ -4,10 +4,10 @@
 
 @include('layouts.header')
 <?php
-$title = empty($title) ? 'Памятники мраморные, Бетонные, Колодцы' : $title;
-$description = empty($description) ? 'Мы обладаем огромным опытом работы в данной отрасли и в нашем профессиональном подходе Вы можете легко убедиться, посетив нас.Мы изготавливаем памятники из чёрного гранита,,архитектурного бетона,мраморной крошки и песчаника.' : $description;
+$title = empty($title) ? __('translations.catalog_produse') : $title;
+$description = empty($description) ? __('translations.all_products_descr') : $description;
 ?>
-<section class="bread-crumb banner_area" style="margin-top: -80px;">
+<section class="bread-crumb banner_area"  style="margin-top: -60px;">
     <ul itemscope="" itemType="http://schema.org/BreadcrumbList" id="br_crumb_ul">
         <div class="banner_inner">
             <div class="container">
@@ -30,6 +30,7 @@ $description = empty($description) ? 'Мы обладаем огромным о�
         </div>
     </ul>
 </section>
+<hr style="border: 2px solid grey;">
 {{--<!--================End Home Banner Area =================-->--}}
 {{--<!--================Category Product Area =================-->--}}
 <section class="cat_product_area section_gap">
@@ -148,7 +149,7 @@ $description = empty($description) ? 'Мы обладаем огромным о�
                                     <a href="{{$url}}">
                                         <h4>{{$portfolio->name}}</h4>
                                     </a>
-                                    <h5>{{ $portfolio->sizes->count() > 1 ? $portfolio->sizes->first()->price : $portfolio->price }}</h5>
+                                    <h5 class="robotic">{{ $portfolio->sizes->count() > 1 ? $portfolio->sizes->first()->price : $portfolio->price }}</h5>
                                 </div>
                             </a>
                         </div>

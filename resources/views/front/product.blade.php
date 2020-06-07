@@ -14,107 +14,8 @@
     $description = $ru ? 'description_ru' : 'description';
     $size = $ru ? 'size_ru' : 'size';
     ?>
-    <style>
-        .zoomD {
-            width: 600px;
-            height: auto;
-            cursor: pointer;
-        }
-
-        /* [LIGHTBOX BACKGROUND] */
-        #lb-back {
-            position: fixed;
-            top: 0;
-            left: 20%;
-            width: 50%;
-            height: 100%;
-            background: rgba( 0, 0, 0, 0.8 );
-            z-index: 999;
-            visibility: hidden;
-            opacity: 0;
-            transition: all ease 0.4s;
-        }
-        #lb-back.show {
-            visibility: visible;
-            opacity: 1;
-        }
-
-        /* [LIGHTBOX IMAGE] */
-        #lb-img {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            text-align: center;
-        }
-        #lb-img img {
-            /* You might want to play around with
-               width, height, max-width, max-height
-               to fit portrait / landscape pictures properly. */
-            /* ALTERNATE EXAMPLE
-            width: 100%;
-            max-width: 1200px;
-            height: auto;
-            margin: 0 auto; */
-        }
-    </style>
-    <div id="lb-back">
-        <div id="lb-img"></div>
-    </div>
-    <script type="text/javascript">
-        // function zoomImgs(id){
-        //     console.log(1);
-        var zoomImg = function () {
-            // Create evil image clone
-            var clone = this.cloneNode();
-            clone.classList.remove('zoomD1');
-
-            // Put evil clone into lightbox
-            var lb = document.getElementById("lb-img");
-            lb.innerHTML = "";
-            lb.appendChild(clone);
-
-            // Show lightbox
-            lb = document.getElementById("lb-back");
-            lb.classList.add("show");
-        };
-
-        window.addEventListener("load", function(){
-            // Attach on click events to all .zoomD images
-            var images = document.getElementsByClassName('zoomD1');
-            if (images.length>0) {
-                for (var img of images) {
-                    img.addEventListener("click", zoomImg);
-                }
-            }
-
-            // Click event to hide the lightbox
-            document.getElementById("lb-back").addEventListener("click", function(){
-                this.classList.remove("show");
-            })
-        });
-        // }
-
-    </script>
-    <style>.font-size15{
-            font-size: 55px;
-        }</style>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        .zoom {
-            transition: transform .2s;
-        }
-
-        .zoom:hover {
-            -ms-transform: scale(1.5); /* IE 9 */
-            -webkit-transform: scale(1.5); /* Safari 3-8 */
-            transform: scale(1.5);
-        }
-    </style>
     <!--================Header Menu Area =================-->
-    <section class="bread-crumb banner_area" style="margin-top: -40px;">
+    <section class="bread-crumb banner_area" style="margin-top: -50px;">
         <ul itemscope="" itemType="http://schema.org/BreadcrumbList" id="br_crumb_ul">
             <div class="banner_inner">
                 <div class="container">
@@ -130,6 +31,7 @@
             </div>
         </ul>
     </section>
+    <hr style="border: 2px solid grey;">
     <div class="product_image_area">
         <div class="row s_product_inner">
             <div class="col-lg-2">
@@ -227,15 +129,15 @@
             </div>
             <div class="col-lg-5 offset-lg-1" style="margin-left: 20px;">
                 <div class="s_product_text">
-                    <h1>{{ $portfolio->$name }}</h1>
+                    <h1 style="color: black; font-size: 60px;">{{ $portfolio->$name }}</h1>
                     <form method="POST" action="{{ route('checkout', $portfolio) }}">
 
-                        <h3> <strong> @lang('translations.id'): {{ $portfolio->price2 }} - {{ $portfolio->id }}</strong></h3>
+                        <h3>  @lang('translations.id'): <strong style="color: red; font-size: 35px"> {{ $portfolio->id }}</strong></h3>
                         <div>
                             @if($portfolio->sizes->count() > 1)
                                 <select id="mySelect" name="size" onchange="myFunction()">
                                     @foreach($portfolio->sizes as $size)
-                                        <option value="{{ $size->price }}">Размер: {{ $size->size }}</option>
+                                        <option class="robotic" value="{{ $size->price }}">Размер: {{ $size->size }}</option>
                                     @endforeach
                                 </select>
                                 <script>
@@ -245,10 +147,10 @@
                                     }
                                 </script>
                                 <br><br>
-                                <h2 id="demo">Цена: {{ $portfolio->sizes->first()->price }} Lei</h2>
+                                <h2 id="demo" class="robotic">@lang('translations.price') {{ $portfolio->sizes->first()->price }} Lei</h2>
                             @else
                                 <h2>@lang('translations.price'): {{ $portfolio->price }} Lei</h2>
-                                <h4>@lang('translations.size'): <br> {!! nl2br(e($portfolio->$size)) !!}</h4>
+                                <h4 class="robotic"><strong>@lang('translations.size')</strong>: <br> {!! nl2br(e($portfolio->$size)) !!}</h4>
                             @endif
 
                         </div>
@@ -259,10 +161,6 @@
                                         <span>@lang('translations.category')</span> : {{$tag->name}}</a>
                                 </li>
                             @endforeach
-                            <li>
-                                {{ $portfolio->available ? 'Есть в наличии' : 'Нет в наличии' }}
-                            </li>
-
                         </ul>
                         <p>@lang('translations.description'): {!! nl2br(e($portfolio->$description))!!}</p>
                         {{ csrf_field() }}
@@ -283,7 +181,6 @@
         </div>
     </div>
     </div>
-
     <section class="feature_product_area section_gap" style="margin-top: 100px;">
         <div class="main_box">
             <div class="container-fluid">

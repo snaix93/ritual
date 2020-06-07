@@ -6,6 +6,7 @@
 
     <!--================Contact Area =================-->
     <section class="contact_area p_120">
+        <hr style="border: 2px solid grey;">
         <div class="container">
             <div id="mapBox" class="mapBox">
                 <img src="">
@@ -17,20 +18,20 @@
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
                             <h6>г. Сорока</h6>
-                            <p>ул. Independentii 12</p>
+                            <p>Str. Cosăuților 10</p>
                         </div>
                         <div class="info_item">
                             <i class="lnr lnr-phone-handset"></i>
                             <h6>
                                 <a>Тел.: (0230) 9-29-42</a>
-                                <a> Моб.: 069696111</a>
-                                <a> Моб.: 069461947</a>
+                                <a> Моб.: 069007959</a>
+                                <a> Моб.: 069693473</a>
                             </h6>
                         </div>
                         <div class="info_item">
                             <i class="lnr lnr-envelope"></i>
                             <h6>
-                                <a>funerare@rambler.ru</a>
+                                <a>vanzari@fantana.md</a>
                             </h6>
                         </div>
                     </div>
@@ -73,6 +74,7 @@
                     </div>
                 </div>
             </div>
+            <hr style="margin-top: 20px; border: 2px solid grey;">
             <div class="row" style="margin-top: 70px;">
                 <div class="col-lg-4">
                     <div class="contact_info">

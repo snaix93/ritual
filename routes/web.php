@@ -32,24 +32,26 @@ Route::middleware(['language'])->group(function () {
     Route::get('information/pages/parametri-tehnici', ['as' => 'parametri',  function() {
         return view('front.categories.parametri');
     }]);
+
+    Route::get('/confirmation', function(Request $request) {
+        $order = \App\Order::orderBy('id','desc')->first();
+        $portfolio = $order->portfolio;
+        return view('front.thank_you', compact('portfolio'));
+    });
+
+    Route::get('{category}/{portfolio}/create', 'FrontendController@displayItem')->name('comenzi.create');
+    Route::get('{category}/{portfolio}/payment', 'FrontendController@index');
+    Route::post('{category}/{portfolio}/payment', 'Front\OrdersController@store')->name('comenzi.store');
+
+    Route::get('comenzi/livrare', 'Front\OrdersController@update')->name('comenzi.livrare');
+    Route::post('checkout/{portfolio}', 'FrontendController@checkout')->name('checkout');
+    Route::get('checkout', 'FrontendController@checkout');
+
 });
 
 
 
 
-Route::get('/confirmation', function(Request $request) {
-    $order = \App\Order::orderBy('id','desc')->first();
-    $portfolio = $order->portfolio;
-    return view('front.thank_you', compact('portfolio'));
-});
-
-Route::get('{category}/{portfolio}/create', 'FrontendController@displayItem')->name('comenzi.create');
-Route::get('{category}/{portfolio}/payment', 'FrontendController@index');
-Route::post('{category}/{portfolio}/payment', 'Front\OrdersController@store')->name('comenzi.store');
-
-Route::get('comenzi/livrare', 'Front\OrdersController@update')->name('comenzi.livrare');
-Route::post('checkout/{portfolio}', 'FrontendController@checkout')->name('checkout');
-Route::get('checkout', 'FrontendController@checkout');
 
 Route::group(['prefix' => 'admin/dashboard'], function () {
 

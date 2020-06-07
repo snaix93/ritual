@@ -20,7 +20,7 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+{{--    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">--}}
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -53,6 +53,15 @@
     <!-- main css -->
     <link rel="stylesheet" href="{{ asset('fashiop/css/style.css')}}">
     <link rel="stylesheet" href="{{ asset('fashiop/css/responsive.css')}}">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather Sans' rel='stylesheet'>
+    <style>
+        .body, h1, h2, h3, h4,h5,h6,p{
+            font-family: 'Merriweather Sans';
+        }
+        .robotic{
+            font-family: 'Roboto';font-size: 22px;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
@@ -70,7 +79,6 @@
                     <ul class="navbar-nav mr-auto">
 
                     </ul>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->

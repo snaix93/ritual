@@ -25,22 +25,22 @@
 		sup { font-size: 100% !important; }
 	</style>
 	<![endif]-->
-	
+
 
 	<style type="text/css" media="screen">
 		/* Linked Styles */
 		body { padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; background:#1d1d1d; -webkit-text-size-adjust:none }
 		a { color:#ffffff; text-decoration:none }
-		p { padding:0 !important; margin:0 !important } 
+		p { padding:0 !important; margin:0 !important }
 		img { -ms-interpolation-mode: bicubic; /* Allow smoother rendering of resized image in Internet Explorer */ }
 		.mcnPreviewText { display: none !important; }
-		
+
 		/* Mobile styles */
 		@media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
 			.mobile-shell { width: 100% !important; min-width: 100% !important; }
-			
+
 			.m-center { text-align: center !important; }
-			
+
 			.center { margin: 0 auto !important; }
 			.td { width: 100% !important; min-width: 100% !important; }
 			.m-br-15 { height: 15px !important; }
@@ -48,7 +48,7 @@
 			.m-hide { display: none !important; width: 0 !important; height: 0 !important; font-size: 0 !important; line-height: 0 !important; min-height: 0 !important; }
 
 			.m-block { display: block !important; }
-			.m-auto { height: auto !important; } 
+			.m-auto { height: auto !important; }
 
 			.fluid-img img { width: 100% !important; max-width: 100% !important; height: auto !important; }
 			.bg { -webkit-background-size: cover !important; background-size: cover !important; background-repeat: none !important; background-position: center 0 !important; }
@@ -58,7 +58,7 @@
 			.p30-15-0 { padding: 30px 15px 0px 15px !important; }
 			.pb-30 { padding-bottom: 30px !important; }
 			.pb-30-0 { padding: 30px 0px !important; }
-			
+
 			.nopt { padding-top: 0px !important; }
 			.nobb { border-bottom: none !important; }
 			.nop { padding: 0 !important; }
@@ -154,34 +154,34 @@
 									<td class="td" style="width:650px; min-width:650px; font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">
 										<table width="100%" border="0" cellspacing="0" cellpadding="0">
 											<tr>
-												<th class="column" width="140" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">
-													<table width="100%" border="0" cellspacing="0" cellpadding="0">
-														<tr>
-															<!-- Logo -->
-															<td class="img m-center" style="font-size:0pt; line-height:0pt; text-align:left;"><img src="https://www.buchetto.ro/favicon.png" width="72" height="57" border="0" alt="" /></td>
-															<!-- END Logo -->
-														</tr>
-													</table>
-												</th>
-												<th class="column-empty2" width="10" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;"></th>
-												<th class="column" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">
-													<table width="100%" border="0" cellspacing="0" cellpadding="0">
-														<tr>
-															<td align="right">
-																<table class="center" border="0" cellspacing="0" cellpadding="0" style="text-align:center;">
-																	<tr>
-																		<td class="img" width="36" style="font-size:0pt; line-height:0pt; text-align:left;"><a href="https://www.facebook.com/buchetto.ro/?modal=admin_todo_tour" target="_blank"><img src="https://www.buchetto.ro/mail/images/ico_grey_facebook.png" width="15" height="14" border="0" alt="" /></a></td>
-																		<td class="img" width="36" style="font-size:0pt; line-height:0pt; text-align:left;"><a href="https://www.google.com/maps/place/Buchetto/@44.4579751,26.0623047,17z/data=!4m12!1m6!3m5!1s0x40b2014b79db0895:0xd8fae34e0792e8a6!2sBuchetto!8m2!3d44.4579751!4d26.0644934!3m4!1s0x40b2014b79db0895:0xd8fae34e0792e8a6!8m2!3d44.4579751!4d26.0644934" target="_blank"><img src="https://www.buchetto.ro/mail/images/ico_grey_gplus.png" width="15" height="14" border="0" alt="" /></a></td>
-																		<td class="img" width="36" style="font-size:0pt; line-height:0pt; text-align:left;"><a href="https://www.instagram.com/buchetto.romania/" target="_blank"><img src="https://www.buchetto.ro/mail/images/ico_grey_instagram.png" width="15" height="14" border="0" alt="" /></a></td>
-																		<td class="img" width="36" style="font-size:0pt; line-height:0pt; text-align:left;"><a href="https://ro.pinterest.com/buchetto_ro/pins/" target="_blank"><img src="https://www.buchetto.ro/mail/images/ico_grey_pinterest.png" width="15" height="14" border="0" alt="" /></a></td>
-																		<td class="img" width="15" style="font-size:0pt; line-height:0pt; text-align:left;"><a href="https://www.linkedin.com/company/buchetto-romania" target="_blank"><img src="https://www.buchetto.ro/mail/images/ico_grey_linkedin.png" width="15" height="14" border="0" alt="" /></a></td>
+{{--												<th class="column" width="140" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">--}}
+{{--													<table width="100%" border="0" cellspacing="0" cellpadding="0">--}}
+{{--														<tr>--}}
+{{--															<!-- Logo -->--}}
+{{--															<td class="img m-center" style="font-size:0pt; line-height:0pt; text-align:left;"><img src="https://www.buchetto.ro/favicon.png" width="72" height="57" border="0" alt="" /></td>--}}
+{{--															<!-- END Logo -->--}}
+{{--														</tr>--}}
+{{--													</table>--}}
+{{--												</th>--}}
+{{--												<th class="column-empty2" width="10" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;"></th>--}}
+{{--												<th class="column" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">--}}
+{{--													<table width="100%" border="0" cellspacing="0" cellpadding="0">--}}
+{{--														<tr>--}}
+{{--															<td align="right">--}}
+{{--																<table class="center" border="0" cellspacing="0" cellpadding="0" style="text-align:center;">--}}
+{{--																	<tr>--}}
+{{--																		<td class="img" width="36" style="font-size:0pt; line-height:0pt; text-align:left;"><a href="https://www.facebook.com/buchetto.ro/?modal=admin_todo_tour" target="_blank"><img src="https://www.buchetto.ro/mail/images/ico_grey_facebook.png" width="15" height="14" border="0" alt="" /></a></td>--}}
+{{--																		<td class="img" width="36" style="font-size:0pt; line-height:0pt; text-align:left;"><a href="https://www.google.com/maps/place/Buchetto/@44.4579751,26.0623047,17z/data=!4m12!1m6!3m5!1s0x40b2014b79db0895:0xd8fae34e0792e8a6!2sBuchetto!8m2!3d44.4579751!4d26.0644934!3m4!1s0x40b2014b79db0895:0xd8fae34e0792e8a6!8m2!3d44.4579751!4d26.0644934" target="_blank"><img src="https://www.buchetto.ro/mail/images/ico_grey_gplus.png" width="15" height="14" border="0" alt="" /></a></td>--}}
+{{--																		<td class="img" width="36" style="font-size:0pt; line-height:0pt; text-align:left;"><a href="https://www.instagram.com/buchetto.romania/" target="_blank"><img src="https://www.buchetto.ro/mail/images/ico_grey_instagram.png" width="15" height="14" border="0" alt="" /></a></td>--}}
+{{--																		<td class="img" width="36" style="font-size:0pt; line-height:0pt; text-align:left;"><a href="https://ro.pinterest.com/buchetto_ro/pins/" target="_blank"><img src="https://www.buchetto.ro/mail/images/ico_grey_pinterest.png" width="15" height="14" border="0" alt="" /></a></td>--}}
+{{--																		<td class="img" width="15" style="font-size:0pt; line-height:0pt; text-align:left;"><a href="https://www.linkedin.com/company/buchetto-romania" target="_blank"><img src="https://www.buchetto.ro/mail/images/ico_grey_linkedin.png" width="15" height="14" border="0" alt="" /></a></td>--}}
 
-																	</tr>
-																</table>
-															</td>
-														</tr>
-													</table>
-												</th>
+{{--																	</tr>--}}
+{{--																</table>--}}
+{{--															</td>--}}
+{{--														</tr>--}}
+{{--													</table>--}}
+{{--												</th>--}}
 											</tr>
 										</table>
 									</td>
@@ -205,18 +205,16 @@
 														<tr>
 															<th class="column-top" width="140" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top;">
 																<table width="100%" border="0" cellspacing="0" cellpadding="0">
-																	<tr>
-																		<td class="fluid-img center pb20" style="font-size:0pt; line-height:0pt; text-align:center; padding-bottom:20px;"><img src="{{ $image  }}" width="310" height="330" border="0" alt="" /></td>
-																	</tr>
-																	<tr>
-																		<td class="h4 center" style="color:#ffffff; font-family:'Playfair Display', Georgia, serif; font-size:22px; line-height:28px; text-transform:uppercase; text-align:center; padding-bottom:10px;"><multiline><span style="color: #2ea59c;">Confirmare comanada: {{ $name  }}</span></multiline></td>
-																	</tr>
+{{--																	<tr>--}}
+{{--																		<td class="fluid-img center pb20" style="font-size:0pt; line-height:0pt; text-align:center; padding-bottom:20px;"><img src="{{ $image  }}" width="310" height="330" border="0" alt="" /></td>--}}
+{{--																	</tr>--}}
+{{--																	<tr>--}}
+{{--																		<td class="h4 center" style="color:#ffffff; font-family:'Playfair Display', Georgia, serif; font-size:22px; line-height:28px; text-transform:uppercase; text-align:center; padding-bottom:10px;"><multiline><span style="color: #2ea59c;">Confirmare comanada: {{ $name  }}</span></multiline></td>--}}
+{{--																	</tr>--}}
 																	<tr>
 																		<td class="text center pb10" style="color:#979797; font-family:'Raleway', Arial,sans-serif; font-size:14px; line-height:24px; text-align:center; padding-bottom:10px;"><multiline> Pret final: {{ $order->price }} <br>
 																				Data Livrare: {{ $order->delivery_date }} <br>
-																				Timp Livrare: {{ $order->delivery_range}} <br>
 																				Adresa Livrare: {{ $order->r_address}} <br>
-																				Numar de flori: {{ $order->flow_amount }} <br>
 																				Mesaj: {{ $order->message }} <br>
 																				Specificatii: {{ $order->description }} <br>
 																			</multiline> </td>
@@ -239,7 +237,7 @@
 										</table>
 									</td>
 								</tr>
-							</table>	
+							</table>
 						</td>
 					</tr>
 				</table>
@@ -281,7 +279,7 @@
 										</table>
 									</td>
 								</tr>
-							</table>	
+							</table>
 						</td>
 					</tr>
 				</table>

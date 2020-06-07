@@ -3,11 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="ad68ba7f-5201-4441-88b5-578b9d8f8133" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/OrdersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fashiop/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/fashiop/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fashiop/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/fashiop/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/translations.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/translations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ru/translations.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ru/translations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/categories/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/categories/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/categories/parametri.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/categories/parametri.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/categories/tehnologii.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/categories/tehnologii.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/checkout_old.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/landing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/landing.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/landing_old.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/product.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/product_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/product_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/product_list_old.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/product_old.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/thank_you_old.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mail_template/confirmation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mail_template/confirmation.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,9 +33,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -145,7 +159,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -223,7 +236,16 @@
       <workItem from="1589869754050" duration="4063000" />
       <workItem from="1589877115613" duration="1822000" />
       <workItem from="1589952808880" duration="6672000" />
-      <workItem from="1590126416937" duration="5406000" />
+      <workItem from="1590126416937" duration="5956000" />
+      <workItem from="1590220477736" duration="4087000" />
+      <workItem from="1590331319081" duration="842000" />
+      <workItem from="1590383735038" duration="177000" />
+      <workItem from="1590390245870" duration="4658000" />
+      <workItem from="1590491442608" duration="80000" />
+      <workItem from="1590510596043" duration="2835000" />
+      <workItem from="1590827510389" duration="8302000" />
+      <workItem from="1590992594026" duration="26000" />
+      <workItem from="1591511619940" duration="459000" />
     </task>
     <task id="LOCAL-00001" summary="20 May">
       <created>1589958626142</created>
@@ -232,31 +254,39 @@
       <option name="project" value="LOCAL" />
       <updated>1589958626142</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="22 M">
+      <created>1590135571088</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590135571088</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="20 May" />
-    <option name="LAST_COMMIT_MESSAGE" value="20 May" />
+    <MESSAGE value="22 M" />
+    <option name="LAST_COMMIT_MESSAGE" value="22 M" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2610" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589872521156">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2610" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589872521156" />
-    <state x="2505" y="134" key="CommitChangelistDialog2" timestamp="1589958625369">
+    <state x="2505" y="134" key="CommitChangelistDialog2" timestamp="1590135570106">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2505" y="134" key="CommitChangelistDialog2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589958625369" />
-    <state x="2660" y="286" key="FileChooserDialogImpl" timestamp="1590135562634">
+    <state x="2505" y="134" key="CommitChangelistDialog2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590135570106" />
+    <state x="2660" y="286" key="FileChooserDialogImpl" timestamp="1590992617980">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2660" y="286" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590135562634" />
+    <state x="2660" y="286" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590992617980" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586450465089" />
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586419155838" />
     <state x="2660" y="286" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587720770451" />
@@ -282,11 +312,12 @@
     <state x="2536" y="249" key="run.anything.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589959065603" />
     <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585909210860" />
     <state x="2536" y="249" key="run.anything.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586774872120" />
-    <state x="2543" y="234" width="672" height="705" key="search.everywhere.popup" timestamp="1590130872075">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="498" y="187" width="672" height="564" key="search.everywhere.popup" timestamp="1591511797821">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="498" y="187" width="672" height="564" key="search.everywhere.popup/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1588424135958" />
-    <state x="2543" y="234" width="672" height="705" key="search.everywhere.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590130872075" />
+    <state x="2543" y="234" width="672" height="705" key="search.everywhere.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590834176808" />
+    <state x="498" y="187" width="672" height="564" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1591511797821" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586441713356" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584607301371" />
     <state x="2543" y="234" width="672" height="705" key="search.everywhere.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587720755706" />

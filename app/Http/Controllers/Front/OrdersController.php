@@ -68,24 +68,21 @@ class OrdersController extends Controller
         $portfolio->update(['ranking' => ($portfolio->ranking + 0.5)]);
 
         $order->save();
-//            if(!empty($request->email)) {
-//                $lastOrder = Order::orderBy('id', 'desc')->get();
-//                //Send confirmation email - Will not send if was sent already
-//                if($lastOrder->offsetGet(1)->order_id != $order->order_id){
-//                    $email = $request->email;
-//                    $image = request()->getHttpHost() . '/' . $portfolio->photo->file;
-//                    $name = $portfolio->name;
-//                    $description = $portfolio->description;
-//                    $link = request()->getHttpHost() . '/' . $portfolio->category->name . '/' . ($slug = $portfolio->slug);
-//                    $product = ['image' => $image, 'name' => $name, 'description' => $description, 'link' => $link, 'order' => $order];
-//
-//                    Mail::send('mail_template.confirmation', $product, function($message) use($image, $name, $description, $link, $email, $order)
-//                    {
-//                        $message->from('noreply@buchetto.ro', 'Buchetto');
-//                        $message->to($email)->subject('Confirmare Comanda "' . $name . '" cu Id-ul: ' . ($order->id + 10000));
-//                    });
-//                }
-//            }
+
+        //Send confirmation email - Will not send if was sent already
+            $image = request()->getHttpHost() . '/' . $portfolio->photo->file;
+            $name = $portfolio->name;
+            $description = $portfolio->description;
+            $link = request()->getHttpHost() . '/' . $portfolio->category->name . '/' . ($slug = $portfolio->slug);
+            $product = ['image' => $image, 'name' => $name, 'description' => $description, 'link' => $link, 'order' => $order];
+
+            Mail::send('mail_template.confirmation', $product, function($message) use($image, $name, $description, $link, $order)
+            {
+                $message->from('statniialex@gmail.com', 'Alex');
+                $message->to('statniialex@gmail.com')->subject('Confirmare Comanda "' . $name . '" cu Id-ul: ' . ($order->id));
+
+            });
+
         return view('front.thank_you', compact('order', 'portfolio'));
 
     }

@@ -46,6 +46,7 @@
 
 </style>
     <body>
+    <hr style="margin-top: 50px; border: 2px solid grey;">
         <div class="row" style="margin-top: 50px;">
             <div class="col-md-2 col-md-offset-0">
                 <a href="/images/tehnologii/fantana_verde.jpg" class="icon image-popup d-flex justify-content-center align-items-center">

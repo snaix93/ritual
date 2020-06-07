@@ -1,4 +1,5 @@
 <!--================ start footer Area  =================-->
+<hr style="border: 2px solid grey;">
 <div class="footer-area section_gap" style="margin-top: 100px;">
     <div class="container">
         <div class="row">

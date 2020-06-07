@@ -19,15 +19,19 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Session;
 
+
 class FrontendController extends Controller{
 
     public function landing(Request $request){
+        $categories = $this->navCategories();
+        $tags_categories = $this->tags();
         if(!empty($request->language)){
             Session::put('locale',$request->language);
             App::setLocale($request->language);
         }
+        $carousel = Portfolio::whereAvailable(1)->orderBy('created_at', 'desc')->take(27)->get();
         $newProducts = Portfolio::whereAvailable(1)->whereNotNull('rotating_image')->orderBy('created_at', 'desc')->take(27)->get();
-        return view('front.landing', compact('newProducts'));
+        return view('front.landing', compact('newProducts', 'carousel', 'categories', 'tags_categories'));
     }
 
     public function navCategories(){
@@ -44,7 +48,7 @@ class FrontendController extends Controller{
 
         $range = [0, 10000];
         $orderBy = $request->sorting ? $request->sorting : 'ranking';
-        $asc = $request->sorting == 'ranking' ? 'desc' : 'asc';
+        $asc = $request->sorting == 'ranking' ? 'asc' : 'desc';
 
         $categories = $this->navCategories();
         $tags_categories = $this->tags();
@@ -93,18 +97,18 @@ class FrontendController extends Controller{
             $tag = Tag::whereName($search)->first();
             if(!empty($tag)){
                 $tags = PortfolioTag::whereTagId($tag->id)->pluck('portfolio_id');
-                $portfolios = Portfolio::whereAvailable(1)->whereIn('id', $tags)->whereBetween('price', $range)->orderBy('ranking', 'desc')->paginate(24);
+                $portfolios = Portfolio::whereAvailable(1)->whereIn('id', $tags)->whereBetween('price', $range)->orderBy('ranking', 'desc')->paginate(48);
             } else {
-                $portfolios = Portfolio::where('name', 'like', '%' . $search . '%')->whereAvailable(1)->orWhere('id', $search)->paginate(24);
+                $portfolios = Portfolio::where('name', 'like', '%' . $search . '%')->whereAvailable(1)->orWhere('id', $search)->paginate(48);
             }
             return view('front.product_list', compact('portfolios', 'search', 'title', 'description','categories', 'tags_categories'));
         }
 
         if(!empty($request->price_min)){
             $range = [intval($request->price_min), intval($request->price_max)];
-            $portfolios = Portfolio::whereAvailable(1)->whereBetween('price', $range)->orderBy('ranking', 'desc')->paginate(24);
+            $portfolios = Portfolio::whereAvailable(1)->whereBetween('price', $range)->orderBy('ranking', 'desc')->paginate(48);
         }else{
-            $portfolios = Portfolio::whereAvailable(1)->orderBy('ranking', 'desc')->paginate(24);
+            $portfolios = Portfolio::whereAvailable(1)->orderBy('ranking', 'desc')->paginate(48);
         }
         return view('front.product_list', compact('portfolios', 'title', 'description','categories','tags_categories'));
     }
