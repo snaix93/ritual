@@ -1,34 +1,5 @@
 <?php     $routeAs = isset(request()->route()->action['as']) ? request()->route()->action['as'] : ''; ?>
 <header class="header_area">
-    <div class="top_menu row m0">
-        <div class="container-fluid">
-            <div class="float-left">
-                <p>@lang('translations.call'): <a href="tel:069696111">+373 69 696 111</a></p>
-            </div>
-            <div class="float-right">
-                <ul class="right_side">
-                    <li>
-                        <a>
-                            @lang('translations.delivery')
-                        </a>
-                    </li>
-                    <li>
-                        <div class="f_social">
-                            <a href="https://www.facebook.com/fantana.md/">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <a href="https://www.instagram.com/fantana.md/">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                            <a href="https://api.whatsapp.com/send?phone=0037369696111" target="_blank">
-                                <i class="fa fa-whatsapp"></i>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <div class="main_menu">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -57,25 +28,54 @@
                             <li class="nav-item  {{ $routeAs == 'tehnologii' ? 'active' : '' }}">
                                 <a class="nav-link" href="/information/pages/tehnologii-de-producere">@lang('translations.tehnologii')</a>
                             </li>
+                            <li class="nav-item  {{ $routeAs == 'works' ? 'active' : '' }}">
+                                <a class="nav-link" href="/information/pages/lucrarile-noastre">@lang('translations.works')</a>
+                            </li>
                             <li class="nav-item  {{ $routeAs == 'parametri' ? 'active' : '' }}">
                                 <a class="nav-link"  href="/information/pages/parametri-tehnici">@lang('translations.parametri')</a>
                             </li>
                             <li class="nav-item {{ $routeAs == 'contact' ? 'active' : '' }}">
                                 <a class="nav-link" href="/information/pages/contact">@lang('translations.contact')</a>
                             </li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle"><img class="text-primary icon-settings_backup_restore" src="/images/icons/{{ Lang::locale() == 'ru' ? 'ru' : 'ro' }}.png"></a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="{{ url('/all-products?language=en&link=' . url()->current()) }}">
-                                            <img class="icon-settings_backup_restore" src="/images/icons/ro.png"></a></li>
-                                    <li class="nav-item"><a class="nav-link" href="{{ url('/all-products?language=ru&link=' . url()->current()) }}">
-                                            <img class="icon-settings_backup_restore" src="/images/icons/ru.png"></a></li>
-                                </ul>
+                            <li class="nav-item"><a class="nav-link" href="{{ url('/all-products?language=en&link=' . url()->current()) }}">
+                                    <img class="icon-settings_backup_restore" src="/images/icons/ro.png"></a>
                             </li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url('/all-products?language=ru&link=' . url()->current()) }}">
+                                    <img class="icon-settings_backup_restore" src="/images/icons/ru.png"></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/fantana.md/">
+                                    <img class="icon-settings_backup_restore" src="/images/icons/facebook.png"></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/fantana.md/">
+                                    <img class="icon-settings_backup_restore" src="/images/icons/instagram-sketched.png"></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://api.whatsapp.com/send?phone=0037369696111">
+                                    <img class="icon-settings_backup_restore" src="/images/icons/wp.png"></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="viber://chat/?number=%2B0037369696111">
+                                    <img class="icon-settings_backup_restore" src="/images/icons/viber.png"></a>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
+    </div>
+    <div class="top_menu">
+        <div class="container-fluid">
+{{--            <div class="float-left">--}}
+{{--                <p>@lang('translations.call'): <a href="tel:069696111">+373 69 696 111</a></p>--}}
+{{--            </div>--}}
+            <div class="float-left">
+                <ul class="right_side">
+                    <li>
+                        <a style="color: red;">
+                            <h6> <img class="icon-settings_backup_restore" src="/images/icons/mover-truck.png">@lang('translations.delivery')</h6>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </header>

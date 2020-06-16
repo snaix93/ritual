@@ -12,10 +12,10 @@
 </style>
     <!--================Contact Area =================-->
     <section class="contact_area p_120">
-        <hr style="margin-top: -40px; border: 2px solid grey;">
+        <hr style="margin-top: -40px; border: 1px solid grey;">
 {{--            <div class="container">--}}
             <div class="d-flex justify-content-center">
-                    <div class="col-md-2"></div>
+                <div class="col-md-2"></div>
                     <div class="col-lg-2 d-flex justify-content-center">
                         <img src="/images/tehnologii/fantana.png" width="300px" height="200px">
                     </div>

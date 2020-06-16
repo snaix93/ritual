@@ -31,7 +31,7 @@
             </div>
         </ul>
     </section>
-    <hr style="border: 2px solid grey;">
+    <hr style="border: 1px solid grey;">
     <div class="product_image_area">
         <div class="row s_product_inner">
             <div class="col-lg-2">
@@ -85,6 +85,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
+                <button class="btn btn-lg btn-success" onclick="goBack()">@lang('translations.back') <<</button>
                 <div class="s_product_img">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -224,5 +225,10 @@
     <script src="/lawncare/js/scrollax.min.js"></script>
     <script src="/lawncare/js/google-map.js"></script>
     <script src="/lawncare/js/main.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
     @include('layouts.footer')
 @endsection

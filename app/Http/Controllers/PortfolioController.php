@@ -231,10 +231,6 @@ class PortfolioController extends Controller
     {
         $portfolio = Portfolio::whereSlug($request->slug)->first();
         $data = $request->all();
-        $data['slug'] = preg_replace('/[^A-Za-z0-9]+/', '-', ($request->name));
-        if($data['slug'] == '-'){
-            return redirect()->back();
-        }
         unset($data['photo_id']);
 
         $portfolio->update($data);

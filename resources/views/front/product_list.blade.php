@@ -30,7 +30,6 @@ $description = empty($description) ? __('translations.all_products_descr') : $de
         </div>
     </ul>
 </section>
-<hr style="border: 2px solid grey;">
 {{--<!--================End Home Banner Area =================-->--}}
 {{--<!--================Category Product Area =================-->--}}
 <section class="cat_product_area section_gap">
@@ -119,9 +118,9 @@ $description = empty($description) ? __('translations.all_products_descr') : $de
                     <div class="right_page ml-auto">
                         <nav class="cat_page" aria-label="Page navigation example">
                             @if ($portfolios->lastPage() > 1)
-                                <ul class="pagination">
+                                <ul class="pagination" style="background-color: grey;">
                                     @for ($i = 1; $i <= $portfolios->lastPage(); $i++)
-                                        <li class="page"><a class="page-link {{ $portfolios->currentPage() == $i ? ' active-pagination' : '' }}" href="{{ $portfolios->url($i) . Request()->parameter }}">{{ $i }}</a></li>
+                                        <li class="page" ><a style="background-color: grey;" class="page-link {{ $portfolios->currentPage() == $i ? ' active-pagination' : '' }}" href="{{ $portfolios->url($i) . Request()->parameter }}">{{ $i }}</a></li>
                                     @endfor
                                 </ul>
 

@@ -74,5 +74,22 @@ class PhotosController extends Controller
         return redirect()->back();
 
     }
+    public function worksShow(){
+
+        $works = Photo::whereType('works')->get();
+        return view('front.works', compact('works'));
+    }
+
+
+    public function works(Request $request){
+        if(!empty($request->photo_id)){
+            foreach($request->photo_id as $key => $file){
+                $name = time() . $file->getClientOriginalName();
+                $file->move('images', $name);
+                Photo::create(['file'=>$name, 'type' => 'works']);
+            }
+        }
+        return redirect()->back()->with('message', "Image Created");
+    }
 
 }

@@ -46,6 +46,7 @@ Route::middleware(['language'])->group(function () {
     Route::get('comenzi/livrare', 'Front\OrdersController@update')->name('comenzi.livrare');
     Route::post('checkout/{portfolio}', 'FrontendController@checkout')->name('checkout');
     Route::get('checkout', 'FrontendController@checkout');
+    Route::get('information/pages/lucrarile-noastre', 'Admin\PhotosController@worksShow')->name('worksShow');
 
 });
 
@@ -102,6 +103,7 @@ Route::group(['prefix' => 'admin/dashboard'], function () {
         'destroy' => 'admin.photos.destroy',
     ]])->middleware(['admin']);
     Route::get('set-main', 'Admin\PhotosController@set_photo')->name('set_main');
+    Route::post('works', 'Admin\PhotosController@works')->name('admin.works');
 
     Route::resource('sizes', 'Admin\SizesController', ['names' => [
         'index' => 'admin.sizes.index',
