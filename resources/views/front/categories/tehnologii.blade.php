@@ -11,8 +11,8 @@
     }
 </style>
     <!--================Contact Area =================-->
-    <section class="contact_area p_120">
-        <hr style="margin-top: -40px; border: 1px solid grey;">
+    <section style="margin-top: 100px;">
+{{--        <hr style="margin-top: -40px; border: 1px solid grey;">--}}
 {{--            <div class="container">--}}
             <div class="d-flex justify-content-center">
                 <div class="col-md-2"></div>

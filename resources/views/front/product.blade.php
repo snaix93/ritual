@@ -84,7 +84,7 @@
                     </aside>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <button class="btn btn-lg btn-success" onclick="goBack()">@lang('translations.back') <<</button>
                 <div class="s_product_img">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -128,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 offset-lg-1" style="margin-left: 20px;">
+            <div class="col-lg-6 offset-lg-1" style="margin-left: 20px;">
                 <div class="s_product_text">
                     <h1 style="color: black; font-size: 60px;">{{ $portfolio->$name }}</h1>
                     <form method="POST" action="{{ route('checkout', $portfolio) }}">

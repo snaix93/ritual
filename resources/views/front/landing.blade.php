@@ -36,7 +36,7 @@
         width:130px;
         height:200px;
         border:1px solid #555;
-        overflow:hidden;
+        /*overflow:hidden;*/
         position:absolute;
     }
     .slider-content figure:nth-child(1){
@@ -69,8 +69,8 @@
     }
 
     .shadow{
-        position: absolute;
-        box-shadow: 0px 0px 0px #000;
+        /*position: absolute;*/
+        /*box-shadow: 0px 0px 0px #000;*/
 
     }
     .slider-content img{
@@ -156,20 +156,21 @@
 
                         <div class="slider-content">
 
-                            <figure class="shadow">
+{{--                            <figure class="shadow">--}}
 
-                                <img src="http://www.webdesigndev.com/wp-content/uploads/2015/07/The-Ice-cavern-by-refriedspinach.jpg">
+{{--                                <img src="http://www.webdesigndev.com/wp-content/uploads/2015/07/The-Ice-cavern-by-refriedspinach.jpg">--}}
 
-                            </figure>
-                            <figure class="shadow"><img src="http://ritual.test:85/images/main/tth.jpg"></figure>
-                            <figure class="shadow"><img src="https://i.pinimg.com/originals/08/b2/0f/08b20f2d451fef77cebab0ae273dd283.jpg"></figure>
-                            <figure class="shadow"><img src="https://images.hdqwalls.com/wallpapers/bthumb/deer-polygon-art-8k-am.jpg"></figure>
-                            <figure class="shadow"><img src="http://www.webdesigndev.com/wp-content/uploads/2015/07/The-Ice-cavern-by-refriedspinach.jpg"></figure>
-                            <figure class="shadow"><img src="https://cdn.wallpapersafari.com/86/48/wHpFRg.jpg"></figure>
-                            <figure class="shadow"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e2c7758404315.560bcaeb3ce4e.jpg"></figure>
-                            <figure class="shadow"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8dc4a523607575.55deba70e5e71.jpg"></figure>
-                            <figure class="shadow"><img src="https://images.hdqwalls.com/wallpapers/bthumb/deer-polygon-art-8k-am.jpg"></figure>
-                            <figure class="shadow"><img src="https://images.hdqwalls.com/wallpapers/bthumb/deer-polygon-art-8k-am.jpg"></figure>
+{{--                            </figure>--}}
+                            <figure class="shadow"><img src="/images/carousel/0.jpg"></figure>
+                            <figure class="shadow"><img src="/images/carousel/1.jpg"></figure>
+                            <figure class="shadow"><img src="/images/carousel/2.jpg"></figure>
+                            <figure class="shadow"><img src="/images/carousel/3.jpg"></figure>
+                            <figure class="shadow"><img src="/images/carousel/4.jpg"></figure>
+                            <figure class="shadow"><img src="/images/carousel/6.jpg"></figure>
+                            <figure class="shadow"><img src="/images/carousel/7.jpg"></figure>
+                            <figure class="shadow"><img src="/images/carousel/8.jpg"></figure>
+                            <figure class="shadow"><img src="/images/carousel/9.jpg"></figure>
+                            <figure class="shadow"><img src="/images/carousel/11.jpg"></figure>
                         </div>
                     </div>
 
