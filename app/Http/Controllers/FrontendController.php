@@ -88,6 +88,7 @@ class FrontendController extends Controller{
         $tags_categories = $this->tags();
         $title  = config('custom.title');
         $description = config('custom.description');
+
         if(!empty($request->search)){
             $range = [0, 10000];
             if(!empty($request->price_min)){

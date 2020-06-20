@@ -3,6 +3,10 @@
 @section('content')
 
     @include('layouts.header')
+    <?php
+    $title = 'Parametri tehnici al fantanilor noastre din Beton';
+    $description = "Aici puteti gasi parametri strandart utilizate pentru confectionarea fantanilor noastre. In poza puteti vedea Inaltimea totala, inaltimea partii de jos, diametru exterior, diametru interior si Greutatea."
+    ?>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

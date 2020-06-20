@@ -29,7 +29,7 @@ return [
     'main' => 'Acasa',
     'contact' => 'Contact',
     'delivery' => 'Este posibila livrarea in mai multe localitati din Republica Moldova. Pretul livrarii nu este inclus in pret',
-    'about' => 'În atelierul nostru vă puteți familiariza cu toată gama de pietre funerare, monumente, garduri și socle ... Avem o vastă experiență în această industrie și puteți vedea cu ușurință abordarea noastră profesională vizitându-ne. Facem monumente din granit negru, beton arhitectural, așchii de marmură și gresie.',
+    'about' => 'În atelierul nostru vă puteți familiariza cu toată gama de producție: Fântâni,Răstigniri și ghivece ... Avem o vastă experiență în această industrie și puteți vedea cu ușurință lucrările noastre   vizitându-ne. .',
     'all' => 'Toate',
     'size' => 'Dimensiuni',
     'id' => 'Codul Produsului',

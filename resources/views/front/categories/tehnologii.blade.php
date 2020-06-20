@@ -2,6 +2,10 @@
 
 @section('content')
     @include('layouts.header')
+    <?php
+    $title = 'Tehnologii de producere Fantata din Beton';
+    $description = "Burlanul de beton a fântânei este întărit cu fier armat de 8 mm, și în acest caz se evită tot felul de fisuri si distrugera burlanului în timpul utilizării."
+    ?>
 <style>
     .par {
         text-indent: 50px;

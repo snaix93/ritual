@@ -1,12 +1,13 @@
 <?php     $routeAs = isset(request()->route()->action['as']) ? request()->route()->action['as'] : ''; ?>
 <header class="header_area">
+    <style>
+        .nav{
+           padding: 0 15px;
+        }
+    </style>
     <div class="main_menu">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand logo_h" href="/">
-                    <img src="/images/icons/fantana.png" alt="">
-                </a>
-                {{--                <h3 style="font-family: 'Just Another Hand', cursive, italic">{{ ucwords(request()->getHost()) }}</h3>--}}
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
@@ -17,6 +18,7 @@
                     <div class="row">
                         <ul class="nav navbar-nav center_nav pull-right">
                             <li class="nav-item">
+                                <img src="/images/icons/fantana.png" alt="">
                                 <h2 class="nav-link" href="/" style="font-size: 2em; font-family: 'Times New Roman', Times, serif;">Fantana.md</h2>
                             </li>
                             <li class="nav-item {{ $routeAs == '/' ? 'active' : '' }}">
@@ -43,19 +45,6 @@
                             <li class="nav-item"><a class="nav-link" href="{{ url('/all-products?language=ru&link=' . url()->current()) }}">
                                     <img class="icon-settings_backup_restore" src="/images/icons/ru.png"></a>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/fantana.md/">
-                                    <img class="icon-settings_backup_restore" src="/images/icons/facebook.png"></a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/fantana.md/">
-                                    <img class="icon-settings_backup_restore" src="/images/icons/instagram-sketched.png"></a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="https://api.whatsapp.com/send?phone=0037369696111">
-                                    <img class="icon-settings_backup_restore" src="/images/icons/wp.png"></a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="viber://chat/?number=%2B0037369696111">
-                                    <img class="icon-settings_backup_restore" src="/images/icons/viber.png"></a>
-                            </li>
-
                         </ul>
                     </div>
                 </div>
@@ -71,7 +60,7 @@
                 <ul class="right_side">
                     <li>
                         <a style="color: red;">
-                            <h6> <img class="icon-settings_backup_restore" src="/images/icons/mover-truck.png">@lang('translations.delivery')</h6>
+                            <h6> <img class="icon-settings_backup_restore" src="/images/icons/mover-truck.png" style="margin-right: 15px;">@lang('translations.delivery')</h6>
                         </a>
                     </li>
                 </ul>

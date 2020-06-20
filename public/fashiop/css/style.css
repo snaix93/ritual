@@ -202,9 +202,9 @@ a {
       .header_area .navbar .nav {
         float: left; } }
     .header_area .navbar .nav .nav-item {
-      margin-right: 45px; }
+      margin-right: 25px; }
       .header_area .navbar .nav .nav-item .nav-link {
-            font: 500 12px/80px   'Merriweather Sans';
+            font: 500 16px/80px   'Merriweather Sans';
         text-transform: uppercase;
         color: #222222;
         padding: 0px;
@@ -293,7 +293,7 @@ a {
           min-width: 50px;
           min-height: 50px; } }
     .header_area .navbar .search {
-      font-size: 14px;
+      font-size: 19px;
       line-height: 80px;
       display: inline-block;
       color: #222222; }
@@ -3017,7 +3017,7 @@ h6 {
 .cat_widgets .list li {
   margin-bottom: 13px; }
   .cat_widgets .list li a {
-    font-size: 14px;
+    font-size: 19px;
     font-family: 'Merriweather Sans';
     color: #222222; }
   .cat_widgets .list li .list {
@@ -3042,7 +3042,7 @@ h6 {
   margin-bottom: 18px; }
   .p_filter_widgets .list li a {
     padding-left: 30px;
-    font-size: 14px;
+    font-size: 22px;
     font-family: 'Merriweather Sans';
     font-weight: normal;
     color: #777777;

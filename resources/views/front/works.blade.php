@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @section('content')
     @include('layouts.header')
+    <?php
+    $title = 'Lucrarile noastre - Poze reale';
+    $description = "Am creat o colectie de imagini ale produselor noastre deja instalate in gospodariile clientilor nostri."
+    ?>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
@@ -35,8 +39,7 @@
 
     </style>
     <body>
-    <hr style="margin-top: 50px; border: 1px solid grey;">
-    <section class="cat_product_area section_gap">
+    <section class="cat_product_area section_gap" style="margin-top: 50px;">
         <div class="container-fluid">
             @if(!empty(Auth::user()) && (Auth::user()->role) == 'admin')
             <div class="row">

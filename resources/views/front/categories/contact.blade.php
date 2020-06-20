@@ -4,6 +4,11 @@
 
     @include('layouts.header')
 
+    <?php
+    $title = 'Contactati-ne la adresele noastre';
+    $description = "Fantanele noastre sunt create in or. Soroca si apoi distribuite in magazinele partenerilor nostri din toata tara."
+    ?>
+
     <!--================Contact Area =================-->
     <section class="contact_area p_120">
         <hr style="border: 1px solid grey;">

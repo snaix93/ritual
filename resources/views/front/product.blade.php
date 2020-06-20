@@ -84,9 +84,9 @@
                     </aside>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <button class="btn btn-lg btn-success" onclick="goBack()">@lang('translations.back') <<</button>
-                <div class="s_product_img">
+                <div class="s_product_img" style="margin-top: 15px;">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <?php $add_val = 0 ?>
@@ -128,9 +128,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 offset-lg-1" style="margin-left: 20px;">
+            <div class="col-lg-5 offset-lg-1" style="margin-left: 20px;">
                 <div class="s_product_text">
-                    <h1 style="color: black; font-size: 60px;">{{ $portfolio->$name }}</h1>
+                    <h1 style="color: black; font-size: 45px;">{{ $portfolio->$name }}</h1>
                     <form method="POST" action="{{ route('checkout', $portfolio) }}">
 
                         <h3>  @lang('translations.id'): <strong style="color: red; font-size: 35px"> {{ $portfolio->id }}</strong></h3>
@@ -166,7 +166,12 @@
                         <p>@lang('translations.description'): {!! nl2br(e($portfolio->$description))!!}</p>
                         {{ csrf_field() }}
                         <div class="card_area">
-                            <button class="main_btn" type="submit" style="color:white;">@lang('translations.place_order')</button>
+                            <div class="btn-addcart-product-detail size9 trans-0-4 m-t-10 m-b-10">
+                                <!-- Button -->
+                                <a href="tel: +37369693473"><button type="button" class="btn btn-success"><i class="fa fa-phone"></i> Suna Acum +37369693473</button></a>
+                                <button class="main_btn" type="submit" style="color:white;">@lang('translations.place_order')</button>
+                            </div>
+
                         </div>
                     </form>
                     <br>

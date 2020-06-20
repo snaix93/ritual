@@ -21,11 +21,21 @@
   <component name="ChangeListManager">
     <list default="true" id="ad68ba7f-5201-4441-88b5-578b9d8f8133" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fashiop/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/fashiop/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fashiop/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/fashiop/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/translations.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/translations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ru/translations.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ru/translations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/categories/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/categories/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/categories/parametri.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/categories/parametri.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/categories/tehnologii.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/categories/tehnologii.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/landing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/landing.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/product_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/product_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/works.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/works.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +253,8 @@
       <workItem from="1592208844684" duration="21000" />
       <workItem from="1592377315308" duration="577000" />
       <workItem from="1592383469344" duration="615000" />
-      <workItem from="1592472442940" duration="853000" />
+      <workItem from="1592472442940" duration="8729000" />
+      <workItem from="1592646596088" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="20 May">
       <created>1589958626142</created>
@@ -266,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591512233517</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="18 June">
+      <created>1592473320017</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592473320017</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,23 +308,24 @@
     <MESSAGE value="20 May" />
     <MESSAGE value="22 M" />
     <MESSAGE value="7 June" />
-    <option name="LAST_COMMIT_MESSAGE" value="7 June" />
+    <MESSAGE value="18 June" />
+    <option name="LAST_COMMIT_MESSAGE" value="18 June" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2610" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589872521156">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2610" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589872521156" />
-    <state x="468" y="2" key="CommitChangelistDialog2" timestamp="1591512232520">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="2505" y="134" key="CommitChangelistDialog2" timestamp="1592473319273">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2505" y="134" key="CommitChangelistDialog2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590135570106" />
+    <state x="2505" y="134" key="CommitChangelistDialog2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592473319273" />
     <state x="468" y="2" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1591512232520" />
-    <state x="2660" y="286" key="FileChooserDialogImpl" timestamp="1592384464895">
+    <state x="2660" y="286" key="FileChooserDialogImpl" timestamp="1592488191470">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="592" y="229" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1592377895252" />
-    <state x="2660" y="286" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592384464895" />
+    <state x="2660" y="286" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592488191470" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586450465089" />
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586419155838" />
     <state x="2660" y="286" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587720770451" />
@@ -324,10 +343,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="416" y="0" width="1380" height="1027" key="dock-window-2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586350380299" />
-    <state x="2576" y="262" width="739" height="630" key="find.popup" timestamp="1589872223745">
+    <state x="2576" y="262" width="739" height="630" key="find.popup" timestamp="1592476793825">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2576" y="262" width="739" height="630" key="find.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589872223745" />
+    <state x="2576" y="262" width="739" height="630" key="find.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592476793825" />
     <state x="2576" y="252" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586441074596" />
     <state x="2576" y="262" width="737" height="630" key="find.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586792289714" />
     <state x="2536" y="249" key="run.anything.popup" timestamp="1589959065603">
@@ -336,11 +355,11 @@
     <state x="2536" y="249" key="run.anything.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589959065603" />
     <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585909210860" />
     <state x="2536" y="249" key="run.anything.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586774872120" />
-    <state x="2543" y="234" width="672" height="705" key="search.everywhere.popup" timestamp="1592384451212">
+    <state x="2543" y="234" width="672" height="705" key="search.everywhere.popup" timestamp="1592480602748">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="498" y="187" width="672" height="564" key="search.everywhere.popup/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1592377350658" />
-    <state x="2543" y="234" width="672" height="705" key="search.everywhere.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592384451212" />
+    <state x="2543" y="234" width="672" height="705" key="search.everywhere.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592480602748" />
     <state x="498" y="187" width="672" height="564" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1591515650076" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586441713356" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584607301371" />

@@ -8,13 +8,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <?php
-    $title = empty($title) ? 'Памятники мраморные, Бетонные, Колодцы' : $title;
-    $description = empty($description) ? 'Мы обладаем огромным опытом работы в данной отрасли и в нашем профессиональном подходе Вы можете легко убедиться, посетив нас.Мы изготавливаем памятники из чёрного гранита,,архитектурного бетона,мраморной крошки и песчаника.' : $description;
+    $title = empty($title) ? 'Fantani din Beton armat' : $title;
+    $description = empty($description) ? 'Avem experienta de peste 15 ani in crearea si instalarea fantanilor din beton armat si executam livrari in orice localitate din Republica Moldova.' : $description;
     ?>
-
-
-    <title>{{ $title }}</title>
-
     <!-- Scripts -->
 {{--    <script src="{{ asset('{{ asset('js/app.js') }}" defer></script>--}}
 
@@ -22,6 +18,7 @@
     <link rel="dns-prefetch" href="fonts.gstatic.com">
 {{--    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">--}}
 
+{{--    {{ dd(url()->full()) }}--}}
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>{{ $title }}</title>

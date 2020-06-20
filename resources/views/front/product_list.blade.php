@@ -131,7 +131,7 @@ $description = empty($description) ? __('translations.all_products_descr') : $de
                 <h1 class="m-text26 p-t-15 p-b-16">
                     {{ $title }}
                 </h1>
-                <p class="text-justify">
+                <p class="text-justify" style="font-size: 19px;">
                     {{ $description }}
                 </p>
                 <div class="latest_product_inner row">
