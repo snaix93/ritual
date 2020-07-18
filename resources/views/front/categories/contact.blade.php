@@ -8,19 +8,24 @@
     $title = 'Contactati-ne la adresele noastre';
     $description = "Fantanele noastre sunt create in or. Soroca si apoi distribuite in magazinele partenerilor nostri din toata tara."
     ?>
-
+    <style>
+        .col-lg-4 border{
+            border: 1px black;
+        }
+    </style>
     <!--================Contact Area =================-->
     <section class="contact_area p_120">
         <hr style="border: 1px solid grey;">
         <div class="container">
-            <div id="mapBox" class="mapBox">
+            <div id="mapBox" class="mapBox col-md-12" style="margin-bottom: 120px;">
                 <img src="">
-                <iframe src="https://www.google.com/maps/d/embed?mid=1o6Wmkv9jTbyRR6VGi1TJtZ7tp-pEeCKX&hl=ro" width="640" height="480"></iframe>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1o6Wmkv9jTbyRR6VGi1TJtZ7tp-pEeCKX&hl=ro" style="width: 100%" height="480"></iframe>
             </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="contact_info">
-                        <div class="info_item">
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-lg-4 border" style="background-color: #bdbdbd;">
+                    <h2 style="color: black">Producator</h2>
+                    <div class="contact_info" >
+                        <div class="info_item" >
                             <i class="lnr lnr-home"></i>
                             <h6>Or. Soroca</h6>
                             <p>Str. Cosăuților 10</p>
@@ -40,7 +45,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 border">
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
@@ -56,7 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 border">
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
@@ -73,9 +78,8 @@
                     </div>
                 </div>
             </div>
-            <hr style="margin-top: 20px; border: 2px solid grey;">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 border">
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
@@ -92,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 border">
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
@@ -108,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 border">
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
@@ -126,7 +130,7 @@
                 </div>
             </div>
             <div class="row" style="margin-top: 70px;">
-                <div class="col-lg-4" >
+                <div class="col-lg-4 border" >
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
@@ -142,7 +146,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 border">
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
@@ -158,7 +162,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 border">
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
@@ -173,9 +177,8 @@
                     </div>
                 </div>
             </div>
-            <hr style="margin-top: 20px; border: 2px solid grey;">
             <div class="row" style="margin-top: 70px;">
-                <div class="col-lg-4">
+                <div class="col-lg-4 border">
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
@@ -191,7 +194,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 border">
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
@@ -207,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 border">
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>

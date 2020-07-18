@@ -29,7 +29,7 @@ class FrontendController extends Controller{
             Session::put('locale',$request->language);
             App::setLocale($request->language);
         }
-        $carousel = Portfolio::whereAvailable(1)->orderBy('created_at', 'desc')->take(27)->get();
+//        $carousel = Portfolio::whereAvailable(1)->orderBy('created_at', 'desc')->take(27)->get();
         $newProducts = Portfolio::whereAvailable(1)->whereNotNull('rotating_image')->orderBy('created_at', 'desc')->take(27)->get();
         return view('front.landing', compact('newProducts', 'carousel', 'categories', 'tags_categories'));
     }
@@ -109,7 +109,7 @@ class FrontendController extends Controller{
             $range = [intval($request->price_min), intval($request->price_max)];
             $portfolios = Portfolio::whereAvailable(1)->whereBetween('price', $range)->orderBy('ranking', 'desc')->paginate(48);
         }else{
-            $portfolios = Portfolio::whereAvailable(1)->orderBy('ranking', 'desc')->paginate(48);
+            $portfolios = Portfolio::whereAvailable(1)->whereNotNull('rotating_image')->orderBy('ranking', 'desc')->paginate(48);
         }
         return view('front.product_list', compact('portfolios', 'title', 'description','categories','tags_categories'));
     }
@@ -156,8 +156,10 @@ class FrontendController extends Controller{
         }
 
         if(!empty($tag)){
-            $description = $tag->description;
-            $title = $tag->header;
+            $description = ($ru = session('locale') == 'ru') ? 'description_ru' : 'description';
+            $title = $ru ? 'header_ru' : 'header';
+            $description = $tag->$description;
+            $title = $tag->$title;
             $order = $tag->id % 2 == 1 ? 'ranking' : 'created_at';
             $tags = PortfolioTag::whereTagId($tag->id)->pluck('portfolio_id');
             $portfolios = Portfolio::whereAvailable(1)->whereIn('id', $tags)->orderBy($order, 'desc')->paginate(24);

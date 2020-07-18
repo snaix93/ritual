@@ -40,12 +40,26 @@
 
                             <label for="fullname">Название</label>
 
+                            {{ Form::text('name_ru', '', ['required','class' => 'form-control']) }}
+
+                        </div>
+                        <div class="form-group">
+
+                            <label for="fullname">Denumire</label>
+
                             {{ Form::text('name', '', ['required','class' => 'form-control']) }}
 
                         </div>
                         <div class="form-group">
 
                             <label for="fullname">Название Категории</label>
+
+                            {{ Form::text('header_ru', '', ['class' => 'form-control']) }}
+
+                        </div>
+                        <div class="form-group">
+
+                            <label for="fullname">Denumire categorie</label>
 
                             {{ Form::text('header', '', ['class' => 'form-control']) }}
 
@@ -54,6 +68,14 @@
                         <div class="form-group">
 
                             <label for="fullname">Описание</label>
+
+                            {{ Form::textarea('description_ru', '', ['class' => 'form-control']) }}
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="fullname">Descriere</label>
 
                             {{ Form::textarea('description', '', ['class' => 'form-control']) }}
 

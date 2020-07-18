@@ -19,9 +19,12 @@
                             <th class="column-title">Ид </th>
 
                             <th class="column-title">Название </th>
+                            <th class="column-title">Denumire </th>
                             <th class="column-title">Название Категории </th>
+                            <th class="column-title">Denumire Categorie </th>
 
                             <th class="column-title">Описание </th>
+                            <th class="column-title">Descriere </th>
 
                             <th class="column-title">Удалить </th>
 
@@ -43,8 +46,11 @@
 
                                 <td class=" ">{{ $tag->id }}</td>
 
+                                <td class=" ">{{ $tag->name_ru }}</td>
                                 <td class=" ">{{ $tag->name }}</td>
+                                <td class=" ">{{ $tag->header_ru }}</td>
                                 <td class=" ">{{ $tag->header }}</td>
+                                <td class=" ">{{ $tag->description_ru }}</td>
                                 <td class=" ">{{ $tag->description }}</td>
 
 

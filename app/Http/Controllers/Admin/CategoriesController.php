@@ -25,7 +25,7 @@ class CategoriesController extends Controller
 
     {
 
-        $categories = Category::orderBy('main_category', 'asc')->paginate(20);
+        $categories = Category::orderBy('main_category', 'asc')->get();
 
         return view('admin.categories.index', compact('categories'));
 
@@ -74,7 +74,9 @@ class CategoriesController extends Controller
     public function store(Request $request){
 
         $data = $request->all();
-        $data['slug'] = $request->name;
+        $data['slug'] = preg_replace('/[^\p{L}\p{N}\s]/u', '-', ($request->name));
+        $data['slug'] = str_replace(" ","-",$data['slug']);
+//        dd($data);
         if(!empty($request->main_category)){
             $data['main_category'] = $request->main_category;
         }

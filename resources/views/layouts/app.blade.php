@@ -6,7 +6,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <link href="{{ url()->current() }}" rel="canonical"/>
     <?php
     $title = empty($title) ? 'Fantani din Beton armat' : $title;
     $description = empty($description) ? 'Avem experienta de peste 15 ani in crearea si instalarea fantanilor din beton armat si executam livrari in orice localitate din Republica Moldova.' : $description;
@@ -20,6 +20,7 @@
 
 {{--    {{ dd(url()->full()) }}--}}
     <!-- Styles -->
+    <link href="https://www.buchetto.ro/flori/aranjamente-florale" rel="canonical"/>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>{{ $title }}</title>
     <meta name="description" content="{{$description}}">

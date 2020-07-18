@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('content')
     @include('layouts.header')
+    <?php
+        $name = session('locale') == 'ru' ? 'name_ru' : 'name';
+    ?>
     <!--================Checkout Area =================-->
     <section class="checkout_area section_gap">
         <div class="container">
@@ -56,7 +59,7 @@
                             </div>
                             <ul class="list">
                                 <li>
-                                    <a >{{ $portfolio->name }}
+                                    <a >{{ $portfolio->$name }}
                                     </a>
                                 </li>
                             </ul>

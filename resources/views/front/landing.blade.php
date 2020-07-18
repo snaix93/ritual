@@ -14,7 +14,7 @@
             padding-top: 50px;
             height: 700px;
             background: #444;
-            perspective: 1000px;
+            perspective: 1200px;
         }
         .content{
             margin: auto;
@@ -28,7 +28,7 @@
             width: 100%;
             position:absolute;
             float:right;
-            animation: rotate 30s infinite linear;
+            animation: rotate 40s infinite linear;
             transform-style: preserve-3d;
         }
         .slider-content:hover{
@@ -37,39 +37,39 @@
         }
 
         .slider-content figure{
-            width:130px;
-            height:200px;
+            width:110px;
+            height:170px;
             border:1px solid #555;
             /*overflow:hidden;*/
             position:absolute;
         }
         .slider-content figure:nth-child(1){
-            transform:rotateY(0deg) translateZ(300px);
+            transform:rotateY(0deg) translateZ(320px);
         }
 
         .slider-content figure:nth-child(2){
-            transform:rotateY(40deg) translateZ(300px);
+            transform:rotateY(40deg) translateZ(320px);
         }
         .slider-content figure:nth-child(3){
-            transform:rotateY(80deg) translateZ(300px);
+            transform:rotateY(80deg) translateZ(320px);
         }
         .slider-content figure:nth-child(4){
-            transform:rotateY(120deg) translateZ(300px);
+            transform:rotateY(120deg) translateZ(320px);
         }
         .slider-content figure:nth-child(5){
-            transform:rotateY(160deg) translateZ(300px);
+            transform:rotateY(160deg) translateZ(320px);
         }
         .slider-content figure:nth-child(6){
-            transform:rotateY(200deg) translateZ(300px);
+            transform:rotateY(200deg) translateZ(320px);
         }
         .slider-content figure:nth-child(7){
-            transform:rotateY(240deg) translateZ(300px);
+            transform:rotateY(240deg) translateZ(320px);
         }
         .slider-content figure:nth-child(8){
-            transform:rotateY(280deg) translateZ(300px);
+            transform:rotateY(280deg) translateZ(320px);
         }
         .slider-content figure:nth-child(9){
-            transform:rotateY(320deg) translateZ(300px);
+            transform:rotateY(320deg) translateZ(320px);
         }
 
         .shadow{
@@ -100,75 +100,32 @@
     <section class="cat_product_area section_gap" style="margin-top: 80px;">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="left_sidebar_area">
-                        <aside class="left_widgets cat_widgets">
-                            <div class="l_w_title">
-                                <h3>@lang('translations.categories')</h3>
-                            </div>
-                            <div class="widgets_inner">
-                                <ul class="list">
-                                    <?php $name = session('locale') == 'ru' ? 'name_ru' : 'name' ?>
-                                    @foreach($categories as $categ)
-                                        @if($categ->subcategories()->count() > 0)
-                                            <li>
-                                                <a href="{{ url('/' . $categ->slug  ) }}">{{ $categ->$name }}</a>
-                                                <ul class="list">
-                                                    <?php $sub = $categ->subCategories()->pluck($name, 'name'); ?>
-                                                    @foreach($sub as $key => $subCat)
-                                                        <li>
-                                                            <a href="{{ url('/' . $key ) }}">{{ $subCat }}</a>
-                                                        </li>
-                                                    @endforeach
-                                                    <li>
-                                                        <a href="{{ url('/' . $categ->slug) }}">{{ $name == 'name_ru' ? 'Все' : 'Toate ' }}</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        @else
-                                            <li>
-                                                <a href="{{ url('/' . $categ->slug  ) }}">{{ $categ->$name }}</a>
-                                            </li>
-                                        @endif
-                                    @endforeach
-
-                                </ul>
-                            </div>
-                        </aside>
-                        <aside class="left_widgets p_filter_widgets">
-                            <div class="l_w_title">
-                                <h3>@lang('translations.contains')</h3>
-                            </div>
-                            <div class="widgets_inner">
-                                <ul class="list">
-                                    @foreach($tags_categories as $tag)
-                                        <li>
-                                            <a href="/category/tag/{{ $tag->name }}">{{ $tag->name }}</a>
-                                        </li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        </aside>
-                    </div>
-                </div>
                 <div class="col-md-9">
                     <section class="slideshow" style="background-color: white;">
                         <div class="content">
                             <div class="slider-content">
-                                <figure class="shadow"><img src="/images/carousel/0.jpg"></figure>
-                                <figure class="shadow"><img src="/images/carousel/1.jpg"></figure>
-                                <figure class="shadow"><img src="/images/carousel/2.jpg"></figure>
-                                <figure class="shadow"><img src="/images/carousel/3.jpg"></figure>
-                                <figure class="shadow"><img src="/images/carousel/4.jpg"></figure>
-                                <figure class="shadow"><img src="/images/carousel/6.jpg"></figure>
-                                <figure class="shadow"><img src="/images/carousel/7.jpg"></figure>
-                                <figure class="shadow"><img src="/images/carousel/8.jpg"></figure>
-                                <figure class="shadow"><img src="/images/carousel/9.jpg"></figure>
-                                <figure class="shadow"><img src="/images/carousel/11.jpg"></figure>
+                                @foreach($newProducts as $portfolio)
+                                    @if(!empty($portfolio->photos->last()->file))
+                                        <figure class="shadow">
+                                            <a href="{{$url = url((empty($portfolio->category->name) ? '' : $portfolio->category->slug)  . '/' . ($slug = $portfolio->slug). '/')}}">
+                                                <img src="{{ $portfolio->photos->last()->file }}">
+                                            </a>
+                                        </figure>
+                                        @endif
+                                @endforeach
+{{--                                <figure class="shadow"><a href="http://fantana.md/Fantana/F-nt-na-Strugure-S-3c-cafenie-cu-capac-360"><img src="/images/carousel/2.jpg"></a></figure>--}}
+{{--                                <figure class="shadow"><a href="http://fantana.md/Fantana/F-nt-na-Cetatea-C-3c-neagra-cu-capac-360"><img src="/images/carousel/3.jpg"></a></figure>--}}
+{{--                                <figure class="shadow"><a href="http://fantana.md/Fantana/F-nt-na-Cetatea-C-3c-cafenie-cu-capac"><img src="/images/carousel/4.jpg"></a></figure>--}}
+{{--                                <figure class="shadow"><a href="http://fantana.md/Fantana/F-nt-na-Moldova-M-3c-neagra-cu-capac-360"><img src="/images/carousel/6.jpg"></a></figure>--}}
+{{--                                <figure class="shadow"><a href="http://fantana.md/Fantana/F-nt-na-Moldova-M-3c-cafeniu-cu-capac-360"><img src="/images/carousel/7.jpg"></a></figure>--}}
+{{--                                <figure class="shadow"><a href="http://fantana.md/Fantana/F-nt-na-Strugure-Sn-3c-neagra-cu-capac-360"><img src="/images/carousel/8.jpg"></a></figure>--}}
+{{--                                <figure class="shadow"><a href="http://fantana.md/Fantana/F-nt-na-Strugure-S-3c-cafenie-cu-capac-360"><img src="/images/carousel/9.jpg"></a></figure>--}}
+{{--                                <figure class="shadow"><a href="http://fantana.md/Fantana/F-nt-na-Cruce-K-3c-neagra-cu-capac-360"><img src="/images/carousel/11.jpg"></a></figure>--}}
                             </div>
                         </div>
                     </section>
                 </div>
+                @include('layouts.categories_bar', ['side' => 'right'])
             </div>
         @include('layouts.footer')
     </section>

@@ -47,7 +47,28 @@
             margin-left: 150px;
             box-shadow: 5px 5px 7px #7f7c7c;
         }
-
+    .nav{
+        padding: 0 15px;
+    }
+    @media screen and (max-width: 700px) {
+        .mobile_hide {
+            display: block;
+        }
+        .product_image_area{
+            margin-top: -90px
+        }
+        .mobile_none{
+            display: none;
+        }
+    }
+    @media screen and (min-width: 700px) {
+        .mobile_hide {
+            display: none;
+        }
+        .mobile_none{
+            display: block;
+        }
+    }
 </style>
     <body>
     <hr style="margin-top: 50px; border: 1px solid grey;">

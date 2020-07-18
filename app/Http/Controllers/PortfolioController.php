@@ -117,7 +117,9 @@ class PortfolioController extends Controller
 //        $portfolio->save();
 
         $data = $request->all();
-        $data['slug'] = preg_replace('/[^A-Za-z0-9-]+/', '-', ($request->name));
+        $data['slug'] = preg_replace('/[^\p{L}\p{N}\s]/u', '-', ($request->name));
+        $data['slug'] = str_replace(" ","-",$data['slug']);
+
         unset($data['photo_id']);
 
 

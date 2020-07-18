@@ -18,22 +18,20 @@
     <section style="margin-top: 100px;">
 {{--        <hr style="margin-top: -40px; border: 1px solid grey;">--}}
 {{--            <div class="container">--}}
-            <div class="d-flex justify-content-center">
-                <div class="col-md-2"></div>
+        <div class="row d-flex justify-content-center">
                     <div class="col-lg-2 d-flex justify-content-center">
                         <img src="/images/tehnologii/fantana.png" width="300px" height="200px">
                     </div>
                     <div class="col-lg-2 d-flex justify-content-center">
                         <img src="/images/tehnologii/cemfort.png"  width="300px" height="200px">
                     </div>
-                <div class="col-md-2"></div>
             </div>
             <div class="d-flex justify-content-center" style="margin-top: 50px;">
                 <div class="col-lg-4 d-flex justify-content-center col-md-offset-6" >
                     <div>
-                        <p class="par">@lang('translations.tehnologii1')</p>
+                        <h5 class="par spacing">@lang('translations.tehnologii1')</h5>
 
-                        <p class="par">@lang('translations.tehnologii2')</p>
+                        <h5 class="par spacing">@lang('translations.tehnologii2')</h5>
                     </div>
                 </div>
             </div>

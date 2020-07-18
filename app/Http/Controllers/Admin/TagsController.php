@@ -47,13 +47,7 @@ class TagsController extends Controller
 
     public function store(Request $request){
 
-        $Tag  = new Tag();
-
-        $Tag->name = $request->name;
-        $Tag->description = $request->description;
-        $Tag->header = $request->header;
-
-        $Tag->save();
+        Tag::create($request->all());
 
         return redirect()->route('admin.tags.index');
 
@@ -63,7 +57,7 @@ class TagsController extends Controller
     public function update(Request $request, Tag $tag){
 
 
-        $tag->update(['name' => $request->name, 'description' => $request->description, 'header' => $request->header ]);
+        $tag->update($request->all());
 
 
         return redirect()->route('admin.tags.index');

@@ -19,23 +19,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad68ba7f-5201-4441-88b5-578b9d8f8133" name="Default Changelist" comment="">
+    <list default="true" id="ad68ba7f-5201-4441-88b5-578b9d8f8133" name="Default Changelist" comment="20 June">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/TagsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/TagsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fashiop/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/fashiop/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fashiop/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/fashiop/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PortfolioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PortfolioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/translations.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/translations.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ru/translations.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ru/translations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/tags/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/tags/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/tags/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/tags/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/categories/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/categories/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/categories/parametri.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/categories/parametri.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/categories/tehnologii.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/categories/tehnologii.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/checkout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/landing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/landing.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/product.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/product_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/product_list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/works.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/works.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer_old.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header_old.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,19 +175,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\buchetto\app\Http\Middleware" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ritual\resources\views\layouts" />
       <recent name="C:\laragon\www\ritual\resources\views\front" />
       <recent name="C:\laragon\www\ritual\resources\views\front\categories" />
       <recent name="C:\laragon\www\ritual\resources\views\admin\categories" />
       <recent name="C:\laragon\www\ritual\app\Http\Middleware" />
-      <recent name="C:\laragon\www\ritual\resources\lang\ru" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\buchetto\app\Http\Middleware" />
     </key>
   </component>
   <component name="RunManager">
@@ -254,7 +263,24 @@
       <workItem from="1592377315308" duration="577000" />
       <workItem from="1592383469344" duration="615000" />
       <workItem from="1592472442940" duration="8729000" />
-      <workItem from="1592646596088" duration="19000" />
+      <workItem from="1592646596088" duration="2919000" />
+      <workItem from="1593091508614" duration="271000" />
+      <workItem from="1593091839550" duration="6882000" />
+      <workItem from="1593157060631" duration="56000" />
+      <workItem from="1593176019773" duration="636000" />
+      <workItem from="1593178134174" duration="2086000" />
+      <workItem from="1593498305789" duration="1447000" />
+      <workItem from="1593585507801" duration="5619000" />
+      <workItem from="1593608779799" duration="5345000" />
+      <workItem from="1593677699091" duration="1673000" />
+      <workItem from="1593874381366" duration="1566000" />
+      <workItem from="1594014663472" duration="50000" />
+      <workItem from="1594027036862" duration="1672000" />
+      <workItem from="1594124019077" duration="1238000" />
+      <workItem from="1594280444983" duration="2839000" />
+      <workItem from="1594283816660" duration="625000" />
+      <workItem from="1594907450430" duration="1945000" />
+      <workItem from="1595069556136" duration="4595000" />
     </task>
     <task id="LOCAL-00001" summary="20 May">
       <created>1589958626142</created>
@@ -284,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592473320017</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="20 June">
+      <created>1592646787163</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592646787163</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,60 +342,57 @@
     <MESSAGE value="22 M" />
     <MESSAGE value="7 June" />
     <MESSAGE value="18 June" />
-    <option name="LAST_COMMIT_MESSAGE" value="18 June" />
+    <MESSAGE value="20 June" />
+    <option name="LAST_COMMIT_MESSAGE" value="20 June" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2610" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589872521156">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2610" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589872521156" />
-    <state x="2505" y="134" key="CommitChangelistDialog2" timestamp="1592473319273">
+    <state x="2505" y="134" key="CommitChangelistDialog2" timestamp="1593586149899">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2505" y="134" key="CommitChangelistDialog2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592473319273" />
+    <state x="2505" y="134" key="CommitChangelistDialog2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1593586149899" />
     <state x="468" y="2" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1591512232520" />
-    <state x="2660" y="286" key="FileChooserDialogImpl" timestamp="1592488191470">
+    <state x="2660" y="286" key="FileChooserDialogImpl" timestamp="1594014706547">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="592" y="229" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1592377895252" />
-    <state x="2660" y="286" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592488191470" />
+    <state x="2660" y="286" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1594014706547" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586450465089" />
-    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586419155838" />
     <state x="2660" y="286" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587720770451" />
     <state x="374" y="43" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591514142540">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="374" y="43" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.864@0.0.1536.864" timestamp="1591514142540" />
-    <state x="262" y="0" width="1288" height="882" key="dock-window-1" timestamp="1588424038644">
+    <state x="0" y="0" width="1550" height="882" key="dock-window-1" timestamp="1593157116558">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="262" y="0" width="1288" height="882" key="dock-window-1/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1588424038644" />
-    <state x="262" y="0" width="1288" height="882" key="dock-window-1/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588344790080" />
-    <state x="0" y="0" width="1368" height="1027" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586359910693" />
-    <state x="416" y="0" width="1380" height="1027" key="dock-window-2" timestamp="1586350380299">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="416" y="0" width="1380" height="1027" key="dock-window-2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586350380299" />
-    <state x="2576" y="262" width="739" height="630" key="find.popup" timestamp="1592476793825">
+    <state x="0" y="0" width="1550" height="882" key="dock-window-1/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1593157116558" />
+    <state x="2576" y="262" width="739" height="630" key="find.popup" timestamp="1595070289334">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2576" y="262" width="739" height="630" key="find.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592476793825" />
+    <state x="2576" y="262" width="739" height="630" key="find.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1595070289334" />
     <state x="2576" y="252" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586441074596" />
     <state x="2576" y="262" width="737" height="630" key="find.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586792289714" />
-    <state x="2536" y="249" key="run.anything.popup" timestamp="1589959065603">
+    <state x="2660" y="253" key="git4idea.branch.GitSmartOperationDialog" timestamp="1592646777484">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2536" y="249" key="run.anything.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589959065603" />
-    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585909210860" />
+    <state x="2660" y="253" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592646777484" />
+    <state x="2536" y="249" key="run.anything.popup" timestamp="1595069761197">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2536" y="249" key="run.anything.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1595069761197" />
     <state x="2536" y="249" key="run.anything.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586774872120" />
-    <state x="2543" y="234" width="672" height="705" key="search.everywhere.popup" timestamp="1592480602748">
+    <state x="2543" y="234" width="672" height="705" key="search.everywhere.popup" timestamp="1595074467157">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="498" y="187" width="672" height="564" key="search.everywhere.popup/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1592377350658" />
-    <state x="2543" y="234" width="672" height="705" key="search.everywhere.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592480602748" />
+    <state x="2543" y="234" width="672" height="705" key="search.everywhere.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1595074467157" />
     <state x="498" y="187" width="672" height="564" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1591515650076" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586441713356" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584607301371" />
     <state x="2543" y="234" width="672" height="705" key="search.everywhere.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587720755706" />
   </component>
   <component name="XDebuggerManager">
@@ -370,7 +400,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/PortfolioController.php</url>
-          <line>124</line>
+          <line>126</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">

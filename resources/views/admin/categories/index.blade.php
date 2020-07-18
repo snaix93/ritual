@@ -18,6 +18,7 @@
 
                             <th class="column-title">Принадлежит </th>
 
+                            <th class="column-title">Slug </th>
                             <th class="column-title">Имя </th>
 
                             <th class="column-title">Создать Второстепенную Категорию </th>
@@ -37,23 +38,24 @@
 
                             <a href="{{ route('admin.categories.create') }}"><button type="button" class="btn btn-primary">Создать Категорию</button></a>
 
-                        @foreach($categories as $category)
+                            @foreach($categories as $category)
 
-                            <tr class="even pointer">
-                                <td class=" ">{{ $category->main_category ? $category->main_category : $category->id}}</td>
+                                <tr class="even pointer">
+                                    <td class=" ">{{ $category->main_category ? $category->main_category : $category->id}}</td>
 
-                                <td class=" ">{{ $category->name }}</td>
+                                    <td class=" ">{{ $category->slug }}</td>
+                                    <td class=" ">{{ $category->name }}</td>
 
-                                @if(empty($category->main_category))
-                                <td><a href="{{  route('admin.sub-category', $category->slug )}}"><button class="btn btn-success"><i class="fa fa-times"></i></button></a></td>
+                                    @if(empty($category->main_category))
+                                        <td><a href="{{  route('admin.sub-category', $category->slug )}}"><button class="btn btn-success"><i class="fa fa-times"></i></button></a></td>
                                     @else
-                                    <td></td>
-                                @endif
-                                <td><a href="{{  route('admin.categories.destroy', $category->slug )}}"><button class="btn btn-danger"><i class="fa fa-times"></i></button></a></td>
-                                <td><a href="{{  route('admin.categories.edit', $category->slug )}}"><button class="btn btn-primary"><i class="fa fa-times"></i></button></a></td>
-                            </tr>
+                                        <td></td>
+                                    @endif
+                                    <td><a href="{{  route('admin.categories.destroy', $category->slug )}}"><button class="btn btn-danger"><i class="fa fa-times"></i></button></a></td>
+                                    <td><a href="{{  route('admin.categories.edit', $category->slug )}}"><button class="btn btn-primary"><i class="fa fa-times"></i></button></a></td>
+                                </tr>
 
-                        @endforeach
+                            @endforeach
 
                         @endif
 
@@ -63,11 +65,11 @@
 
 
 
-{{--                    @if(!empty($categories))--}}
+                    {{--                    @if(!empty($categories))--}}
 
-{{--                    {{ $categories->appends(['sort' => 'votes'])->links() }}--}}
+                    {{--                    {{ $categories->appends(['sort' => 'votes'])->links() }}--}}
 
-{{--                        @endif--}}
+                    {{--                        @endif--}}
 
                 </div>
 
@@ -89,6 +91,6 @@
 
 
 
-  </div>
+    </div>
 
 @endsection
